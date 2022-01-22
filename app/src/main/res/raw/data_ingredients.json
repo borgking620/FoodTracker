@@ -1,0 +1,246 @@
+{
+	"ingredients": [
+		{
+			"ident": "vegetable_paprika_red",
+			"group": "vegetables_paprika",
+			"resourceId": "Paprika (Rot)",
+			"calories": 380,
+			"carbs": 64,
+			"protein": 13,
+			"fat": 5,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_paprika_yellow",
+			"group": "vegetables_paprika",
+			"resourceId": "Paprika (Gelb)",
+			"calories": 270,
+			"carbs": 60,
+			"protein": 10,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_paprika_green",
+			"group": "vegetables_paprika",
+			"resourceId": "Paprika (Grün)",
+			"calories": 200,
+			"carbs": 46,
+			"protein": 9,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_salad_eisberg",
+			"group": "vegetables_salad",
+			"resourceId": "Eisbergsalat",
+			"calories": 130,
+			"carbs": 19,
+			"protein": 7,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_salad_cucumber",
+			"group": "vegetables_salad",
+			"resourceId": "Salatgurke",
+			"calories": 140,
+			"carbs": 18,
+			"protein": 6,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_onion",
+			"group": "vegetables",
+			"resourceId": "Zwiebeln",
+			"calories": 400,
+			"carbs": 90,
+			"protein": 11,
+			"fat": 1,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_carrots",
+			"group": "vegetables",
+			"resourceId": "Möhren",
+			"calories": 410,
+			"carbs": 100,
+			"protein": 9,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_potato",
+			"group": "vegetables",
+			"resourceId": "Kartoffel",
+			"calories": 690,
+			"carbs": 140,
+			"protein": 20,
+			"fat": 0,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "dairy_cream",
+			"group": "dairy",
+			"resourceId": "Sahne",
+			"calories": 2930,
+			"carbs": 32,
+			"protein": 25,
+			"fat": 300,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "meat_beef_regular",
+			"group": "meat",
+			"resourceId": "Rind",
+			"calories": 3320,
+			"carbs": 0,
+			"protein": 140,
+			"fat": 300,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "meat_beef_lean",
+			"group": "meat",
+			"resourceId": "Rind (Fettreduziert)",
+			"calories": 2500,
+			"carbs": 0,
+			"protein": 260,
+			"fat": 150,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "meat_pork",
+			"group": "meat",
+			"resourceId": "Schwein",
+			"calories": 242,
+			"carbs": 0,
+			"protein": 27,
+			"fat": 14,
+			"size": 100,
+			"unit": 1
+		},
+		{
+			"ident": "meat_chicken",
+			"group": "meat",
+			"resourceId": "Hühnchen",
+			"calories": 1650,
+			"carbs": 0,
+			"protein": 31,
+			"fat": 36,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "drinks_alcoholic_beer_hell",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Bier",
+			"calories": 400,
+			"carbs": 36,
+			"protein": 5,
+			"fat": 0,
+			"size": 1000,
+			"unit": 3
+		},
+		{
+			"ident": "nuts_cashews",
+			"group": "nuts",
+			"resourceId": "Cashewkerne",
+			"calories": 6000,
+			"carbs": 198,
+			"protein": 205,
+			"fat": 476,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "cereal_noodles",
+			"group": "cereal",
+			"resourceId": "Nudeln",
+			"calories": 1380,
+			"carbs": 250,
+			"protein": 45,
+			"fat": 21,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "cereal_rice",
+			"group": "cereal",
+			"resourceId": "Reis",
+			"calories": 1300,
+			"carbs": 280,
+			"protein": 27,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fish_shrimps",
+			"group": "fish",
+			"resourceId": "Shrimps",
+			"calories": 990,
+			"carbs": 2,
+			"protein": 240,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_tomato_normal",
+			"group": "vegetables",
+			"resourceId": "Tomaten",
+			"calories": 170,
+			"carbs": 26,
+			"protein": 10,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_tomato_fluid",
+			"group": "vegetables",
+			"resourceId": "Passierte Tomaten",
+			"calories": 380,
+			"carbs": 90,
+			"protein": 17,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "cegetable_tomato_concentrated",
+			"group": "vegetables",
+			"resourceId": "Tomatenmark",
+			"calories": 820,
+			"carbs": 190,
+			"protein": 43,
+			"fat": 5,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "other_egg",
+			"group": "ingredients",
+			"resourceId": "Ei",
+			"calories": 1085,
+			"carbs": 8,
+			"protein": 91,
+			"fat": 77,
+			"size": 10,
+			"unit": 5
+		}
+	]
+}

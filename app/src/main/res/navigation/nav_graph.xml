@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/DayOverviewFragment">
+
+    <fragment
+            android:id="@+id/DayOverviewFragment"
+            android:name="com.smonhof.foodtracker.fragments.DayOverviewFragment"
+            android:label="@string/first_fragment_label"
+            tools:layout="@layout/fragment_dayoverview">
+        <action
+                android:id="@+id/action_FirstFragment_to_IngredientList"
+                app:destination="@id/IngredientListFragment"/>
+
+        <action
+                android:id="@+id/action_FirstFragment_to_MealOverview"
+                app:destination="@id/MealContentList"/>
+    </fragment>
+    <fragment
+        android:id="@+id/IngredientListFragment"
+        android:name="com.smonhof.foodtracker.fragments.IngredientListFragment"
+        android:label="Ingredient List"
+        tools:layout="@layout/fragment_ingredientlist">
+        <argument
+            android:name="ContainerGroup"
+            app:argType="com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+        <action
+            android:id="@+id/action_IngredientList_to_IngredientList"
+            app:destination="@id/IngredientListFragment"/>
+        <action
+            android:id="@+id/action_IngredientList_to_SelectIngredientAmount"
+            app:destination="@id/SelectIngredientAmount"/>
+    </fragment>
+    <fragment
+        android:id="@+id/MealContentList"
+        android:name="com.smonhof.foodtracker.fragments.MealFragment"
+        android:label="Meal"
+        tools:layout="@layout/fragment_meal">
+        <argument
+            android:name="ContainerMeal"
+            app:argType="com.smonhof.foodtracker.fragments.arguments.MealFragmentArguments"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_MealContent_to_IngredientList"
+            app:destination="@id/IngredientListFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SelectIngredientAmount"
+        android:name="com.smonhof.foodtracker.fragments.SelectIngredientAmountFragment"
+        android:label="SelectAmount"
+        tools:layout="@layout/fragment_selectingredientamount">
+        <argument
+            android:name="ContainerIngredient"
+            app:argType="com.smonhof.foodtracker.fragments.arguments.SelectIngredientAmountFragmentArguments"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+</navigation>

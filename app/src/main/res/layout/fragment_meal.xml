@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="fill"
+              android:layout_margin="8dp">
+    <EditText android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/meal_name"
+                 android:hint="enter name" android:singleLine="true"
+                 android:inputType="text"/>
+    <com.smonhof.foodtracker.views.CalorieView android:layout_width="match_parent"
+                                               android:layout_height="120dp" android:id="@+id/caloriesDisplay"/>
+    <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list"
+            android:name="com.smonhof.foodtracker.MealFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.smonhof.foodtracker.fragments.MealFragment"
+            tools:listitem="@layout/fragment_ingredientamount"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal">
+        <Button android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/save_button"
+                android:text="Save"/>
+        <Space android:layout_width="8dp" android:layout_height="match_parent"/>
+        <Button android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Add Ingredient"
+                android:id="@+id/add_ingredient_button"/>
+    </LinearLayout>
+</LinearLayout>

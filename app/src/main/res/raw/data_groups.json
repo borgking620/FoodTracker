@@ -1,0 +1,74 @@
+{
+	"groups": [
+		{
+			"ident": "ingredients",
+			"parent": "",
+			"resourceId": "Zutaten"
+		},
+		{
+			"ident": "vegetables",
+			"parent": "ingredients",
+			"resourceId": "Gemüse"
+		},
+		{
+			"ident": "vegetables_paprika",
+			"parent": "vegetables",
+			"resourceId": "Paprika"
+		},
+		{
+			"ident": "vegetables_salad",
+			"parent": "vegetables",
+			"resourceId": "Salat"
+		},
+		{
+			"ident": "dairy",
+			"parent": "ingredients",
+			"resourceId": "Milchprodukte"
+		},
+		{
+			"ident": "meat",
+			"parent": "ingredients",
+			"resourceId": "Fleisch"
+		},
+		{
+			"ident": "snacks",
+			"parent": "",
+			"resourceId": "Snacks"
+		},
+		{
+			"ident": "drinks",
+			"parent": "snacks",
+			"resourceId": "Getränke"
+		},
+		{
+			"ident": "drinks_alcoholic",
+			"parent": "drinks",
+			"resourceId": "Alkohol"
+		},
+		{
+			"ident": "drinks_alcoholic_beer",
+			"parent": "drinks_alcoholic",
+			"resourceId": "Bier"
+		},
+		{
+			"ident": "cereal",
+			"parent": "ingredients",
+			"resourceId": "Getreide"
+		},
+		{
+			"ident": "fish",
+			"parent": "ingredients",
+			"resourceId": "Fisch"
+		},
+		{
+			"ident": "fruit",
+			"parent": "ingredients",
+			"resourceId": "Früchte"
+		},
+		{
+			"ident": "nuts",
+			"parent": "ingredients",
+			"resourceId": "Nüsse"
+		}
+	]
+}

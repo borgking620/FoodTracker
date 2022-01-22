@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+              android:layout_margin="8dp">
+    <Space android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:id="@+id/ingredient_name"
+              android:text="Ingredient Name" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:textAlignment="center"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:id="@+id/ingredient_amount"
+              android:hint="Amount" android:singleLine="true" android:inputType="numberDecimal"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:orientation="horizontal">
+        <Button android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/select_small_portion"
+                android:text="Small Portion"/>
+        <Space android:layout_width="8dp" android:layout_height="match_parent"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/select_medium_portion"
+                android:text="Medium Portion"/>
+        <Space android:layout_width="8dp" android:layout_height="match_parent"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/select_large_portion"
+                android:text="Large Portion"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="right">
+        <Button android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/confirm_button"
+                android:text="Confirm" />
+    </LinearLayout>
+</LinearLayout>
