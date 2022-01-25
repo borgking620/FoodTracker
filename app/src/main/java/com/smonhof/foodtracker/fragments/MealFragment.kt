@@ -17,7 +17,6 @@ import com.smonhof.foodtracker.databinding.FragmentMealBinding
 import com.smonhof.foodtracker.fragments.recyclerViews.IngredientAmountRecyclerViewAdapter
 import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
 import com.smonhof.foodtracker.fragments.arguments.MealFragmentArguments
-import com.smonhof.foodtracker.fragments.arguments.SelectIngredientAmountFragmentArguments
 
 /**
  * A fragment representing a list of Items.
@@ -62,7 +61,7 @@ class MealFragment : Fragment() {
         }
         binding.saveButton.setOnClickListener{
             if(addMealToDay){
-                DataProvider.getCurrentDay()._intake.add(meal)
+                DataProvider.getCurrentDay()._meals.add(meal)
             }
             findNavController().popBackStack()
         }

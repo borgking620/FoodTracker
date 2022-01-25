@@ -17,6 +17,9 @@
         <action
                 android:id="@+id/action_FirstFragment_to_MealOverview"
                 app:destination="@id/MealContentList"/>
+        <action
+                android:id="@+id/action_DayOverview_to_CustomMeal"
+                app:destination="@id/CustomMeal"/>
     </fragment>
     <fragment
         android:id="@+id/IngredientListFragment"
@@ -59,6 +62,15 @@
             app:argType="com.smonhof.foodtracker.fragments.arguments.SelectIngredientAmountFragmentArguments"
             app:nullable="true"
             android:defaultValue="@null" />
+    </fragment>
+    <fragment android:id="@+id/CustomMeal"
+              android:name="com.smonhof.foodtracker.fragments.CustomMealFragment"
+              android:label="Custom Meal"
+              tools:layout="@layout/fragment_custommeal">
+        <argument android:name="ContainerCustomMeal"
+                  app:argType="com.smonhof.foodtracker.fragments.arguments.CustomMealFragmentArguments"
+                  app:nullable="true"
+                  android:defaultValue="@null"/>
     </fragment>
 
 </navigation>

@@ -13,6 +13,7 @@ import com.smonhof.foodtracker.views.GroupTileView
 import com.smonhof.foodtracker.views.IngredientTileView
 import com.smonhof.foodtracker.data.Group
 import com.smonhof.foodtracker.data.Ingredient
+import com.smonhof.foodtracker.data.IngredientAmount
 import com.smonhof.foodtracker.databinding.FragmentIngredientlistBinding
 import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
 
@@ -21,7 +22,7 @@ class IngredientListFragment : Fragment() {
 
     private val binding get() = _binding!!
     private var _group = Group("Invalid Group", emptyArray(), emptyArray())
-    private var _onSelected : (Ingredient) -> Unit = { ingredient ->  Log.e(null,"Click on " + ingredient.name + " has no feedback!")}
+    private var _onSelected : (IngredientAmount) -> Unit = { ingredientAmount ->  Log.e(null,"Click on " + ingredientAmount.displayName + " has no feedback!")}
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,8 +40,8 @@ class IngredientListFragment : Fragment() {
     private fun fetchArguments(){
         val args = arguments?.get("ContainerGroup")
         if (args is IngredientListFragmentArguments){
-            _group = args.group
-            _onSelected = args.onIngredientSelected
+            _group = args._group
+            _onSelected = args._onIngredientAmountSelected
         }
         else {
             Log.e(null,"Cannot fetch arguments for IngredientListFragment")

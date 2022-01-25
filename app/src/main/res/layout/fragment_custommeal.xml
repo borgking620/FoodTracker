@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_margin="8dp">
+    <Space android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:text="Add custom meal" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:textAlignment="center"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Name"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_name"
+                  android:hint="Name"
+                  android:singleLine="true"
+                  android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Calories"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_calories"
+                  android:hint="Amount"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Carbs"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_carbs"
+                  android:hint="Amount"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Protein"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_protein"
+                  android:hint="Amount"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="Fat"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_fat"
+                  android:hint="Amount"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <Space android:layout_width="0px"
+               android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_save"
+                android:text="Save"/>
+        <Space android:layout_width="0px"
+               android:layout_height="match_parent"
+               android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+{
+	"ingredientsnacks": [
+		{
+			"ident": "drinks_alcoholic_beer_bj02",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Bierjunge (0,2)",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 200
+		},
+		{
+			"ident": "drinks_alcoholic_beer_bj025",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Bierjunge (0,25)",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 250
+		},
+		{
+			"ident": "drinks_alcoholic_beer_bj033",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Bierjunge (0,33)",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 330
+		},
+		{
+			"ident": "drinks_alcoholic_beer_bj05",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Bierjunge (0,5)",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 500
+		},
+		{
+			"ident": "drinks_alcoholic_beer_bj1",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Maß",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 1000
+		},
+		{
+			"ident": "drinks_alcoholic_beer_bj2",
+			"group": "drinks_alcoholic_beer",
+			"resourceId": "Kanne",
+			"ingredient": "drinks_alcoholic_beer_hell",
+			"size": 2000
+		}
+	]
+}

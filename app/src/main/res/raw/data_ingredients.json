@@ -241,6 +241,61 @@
 			"fat": 77,
 			"size": 10,
 			"unit": 5
+		},
+		{
+			"ident": "vegetable_corn",
+			"group": "vegetables",
+			"resourceId": "Mais",
+			"calories": 770,
+			"carbs": 120,
+			"protein": 26,
+			"fat": 17,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fryingfat_butterfat",
+			"group": "fryingfat",
+			"resourceId": "Butterschmalz",
+			"calories": 8980,
+			"carbs": 0,
+			"protein": 0,
+			"fat": 998,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_banana",
+			"group": "fruit",
+			"resourceId": "Banane",
+			"calories": 930,
+			"carbs": 200,
+			"protein": 10,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_radish",
+			"group": "vegetables",
+			"resourceId": "Radieschen",
+			"calories": 160,
+			"carbs": 20,
+			"protein": 10,
+			"fat": 1,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_salad_romana",
+			"group": "vegetables_salad",
+			"resourceId": "Romanasalat",
+			"calories": 170,
+			"carbs": 33,
+			"protein": 12,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

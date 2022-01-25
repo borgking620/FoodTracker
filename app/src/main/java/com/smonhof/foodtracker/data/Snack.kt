@@ -1,9 +1,41 @@
 package com.smonhof.foodtracker.data
 
-class Snack (private val name : String,
-             private val value: ValidIngredientAmount) : CaloricIntake {
+import kotlinx.serialization.Serializable
+
+abstract class Snack : CaloricIntake {
+    abstract val asSerialized : SerializedSnack
+}
+
+class ValidSnack(val _label : String,
+                 val _ingredient : IngredientSnack) : Snack () {
     override val displayName: String
-        get() = name
+        get() = _label
     override val intakeValues: NutritionalValues
-        get() = value.intakeValues
+        get() = _ingredient.intakeValues
+    override val asSerialized: SerializedSnack
+        get() = SerializedSnack(_ingredient._ident)
+}
+
+class InvalidSnack(private val _ident : String) : Snack() {
+    override val displayName: String
+        get() = "!INVALID! $_ident"
+    override val intakeValues: NutritionalValues
+        get() = NutritionalValues.empty
+    override val asSerialized: SerializedSnack
+        get() = SerializedSnack(_ident)
+}
+
+@Serializable
+class SerializedSnack(private val _ident :String){
+    fun deserialize () : Snack {
+        val snack = IngredientProvider.findSnack(_ident)
+        return if(snack == null) {
+            InvalidSnack(_ident)
+        }
+        else {
+            ValidSnack(snack.displayName, snack)
+        }
+
+    }
+
 }

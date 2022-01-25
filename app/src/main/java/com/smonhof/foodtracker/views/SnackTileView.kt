@@ -10,9 +10,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import com.smonhof.foodtracker.R
-import com.smonhof.foodtracker.data.Ingredient
-import com.smonhof.foodtracker.data.ValidIngredientAmount
-import com.smonhof.foodtracker.data.Snack
+import com.smonhof.foodtracker.data.*
 
 class SnackTileView : View {
 
@@ -30,7 +28,7 @@ class SnackTileView : View {
     }
 
     constructor(context :Context, attrs: AttributeSet) : super(context, attrs){
-        snack = Snack("", ValidIngredientAmount(Ingredient.empty,0f))
+        snack = ValidSnack("", IngredientSnack("",NutritionalValues.empty))
         label = "Invalid"
         onClickAction = {}
 

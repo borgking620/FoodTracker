@@ -69,6 +69,11 @@
 			"ident": "nuts",
 			"parent": "ingredients",
 			"resourceId": "Nüsse"
+		},
+		{
+			"ident": "fryingfat",
+			"parent": "ingredients",
+			"resourceId": "Bratfett und Öl"
 		}
 	]
 }

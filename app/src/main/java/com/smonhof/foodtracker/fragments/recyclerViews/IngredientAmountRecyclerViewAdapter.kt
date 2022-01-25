@@ -32,12 +32,12 @@ class IngredientAmountRecyclerViewAdapter(
         val item = values[position]
         when (item){
             is ValidIngredientAmount -> {
-                holder.nameView.text = item.ingredient.name
-                holder.amountView.text = UnitHelper.displayUnit(item.ingredient.unit, item.amount)
-                holder.calorieView.text = UnitHelper.displayUnit(com.smonhof.foodtracker.data.Unit.Calorie,item.amount * item.ingredient.values.Calories)
+                holder.nameView.text = item.displayName
+                holder.amountView.text = UnitHelper.displayUnit(item.unit, item.amount)
+                holder.calorieView.text = UnitHelper.displayUnit(com.smonhof.foodtracker.data.Unit.Calorie,item.intakeValues.Calories)
             }
             is InvalidIngredientAmount -> {
-                holder.nameView.text = item.ident
+                holder.nameView.text = item.displayName
                 holder.amountView.text = item.amount.toString()
                 holder.calorieView.text = "???"
             }

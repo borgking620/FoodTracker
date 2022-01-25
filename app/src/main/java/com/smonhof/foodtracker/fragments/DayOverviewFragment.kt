@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.smonhof.foodtracker.R
 import com.smonhof.foodtracker.data.*
 import com.smonhof.foodtracker.databinding.FragmentDayoverviewBinding
-import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
+import com.smonhof.foodtracker.fragments.arguments.CustomMealFragmentArguments
 import com.smonhof.foodtracker.fragments.arguments.MealFragmentArguments
 import com.smonhof.foodtracker.fragments.recyclerViews.CaloricIntakeRecyclerViewAdapter
 
@@ -35,7 +35,7 @@ class DayOverviewFragment : Fragment() {
         if(binding.list is RecyclerView) {
             with(binding.list){
                 layoutManager = LinearLayoutManager(context)
-                adapter = CaloricIntakeRecyclerViewAdapter(currentDay._intake, ::removeMeal, ::editExistingMeal)
+                adapter = CaloricIntakeRecyclerViewAdapter(currentDay._meals, ::removeMeal, ::editExistingMeal)
             }
         }
         return binding.root
@@ -51,26 +51,34 @@ class DayOverviewFragment : Fragment() {
         binding.buttonAddMeal.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_MealOverview)
         }
+        binding.buttonAddCustom.setOnClickListener{
+            val bundle = bundleOf("ContainerCustomMeal" to CustomMealFragmentArguments(null){new -> currentDay._meals.add(new)})
+            findNavController().navigate(R.id.action_DayOverview_to_CustomMeal, bundle)
+        }
         binding.calorieDisplay.updateValue(currentDay.intakeValues)
     }
 
     private fun removeMeal (id : Int){
-        currentDay._intake.removeAt(id)
+        currentDay._meals.removeAt(id)
         val adapter = binding.list.adapter
         if(adapter is CaloricIntakeRecyclerViewAdapter){
-            adapter.updateValues(currentDay._intake)
+            adapter.updateValues(currentDay._meals)
         }
         binding.calorieDisplay.updateValue(currentDay.intakeValues)
     }
 
     private fun editExistingMeal(id : Int){
-        if(id < 0 || id >= currentDay._intake.count()){
+        if(id < 0 || id >= currentDay._meals.count()){
             return
         }
-        when (val meal : CaloricIntake = currentDay._intake[id]){
+        when (val meal : CaloricIntake = currentDay._meals[id]){
             is Meal -> {
                 val bundle = bundleOf("ContainerMeal" to MealFragmentArguments(meal, false))
                 findNavController().navigate(R.id.action_FirstFragment_to_MealOverview, bundle)
+            }
+            is CustomMeal -> {
+                val bundle = bundleOf("ContainerCustomMeal" to CustomMealFragmentArguments(meal){currentDay._meals[id] = it})
+                findNavController().navigate(R.id.action_DayOverview_to_CustomMeal, bundle)
             }
         }
     }

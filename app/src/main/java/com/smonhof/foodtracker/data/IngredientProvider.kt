@@ -107,6 +107,10 @@ object IngredientProvider {
         return ingredientsByName[ident]
     }
 
+    fun findSnack (ident : String) : IngredientSnack? {
+        return null
+    }
+
     @Serializable
     data class SerializedIngredientList(val ingredients :List<SerializedIngredient>)
 

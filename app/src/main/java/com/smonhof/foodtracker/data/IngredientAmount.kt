@@ -6,13 +6,15 @@ abstract class IngredientAmount : CaloricIntake {
     abstract val asSerialized : SerializedIngredientAmount
 }
 
-class ValidIngredientAmount (val ingredient: Ingredient,
-                             val amount: Float) : IngredientAmount() {
+class ValidIngredientAmount (private val _ingredient: Ingredient,
+                             private val _amount: Float) : IngredientAmount() {
     override val displayName: String
-        get() = ingredient.displayName
+        get() = _ingredient.displayName
     override val intakeValues: NutritionalValues
-        get() = ingredient.intakeValues * amount
-    override val asSerialized get() = SerializedIngredientAmount(ingredient.ident, amount)
+        get() = _ingredient.intakeValues * _amount
+    override val asSerialized get() = SerializedIngredientAmount(_ingredient.ident, _amount)
+    val unit = _ingredient.unit
+    val amount = _amount
 }
 
 class InvalidIngredientAmount (val ident: String, val amount: Float) : IngredientAmount()
