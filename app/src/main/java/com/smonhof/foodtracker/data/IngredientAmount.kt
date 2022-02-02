@@ -1,5 +1,6 @@
 package com.smonhof.foodtracker.data
 
+import android.util.Log
 import kotlinx.serialization.Serializable
 
 abstract class IngredientAmount : CaloricIntake {
@@ -17,24 +18,26 @@ class ValidIngredientAmount (private val _ingredient: Ingredient,
     val amount = _amount
 }
 
-class InvalidIngredientAmount (val ident: String, val amount: Float) : IngredientAmount()
-{
+class InvalidIngredientAmount (private val _ident: String,
+                               private val _amount: Float) : IngredientAmount() {
     override val displayName: String
-        get() = "!INVALID! $ident"
+        get() = "!INVALID! $_ident"
     override val intakeValues: NutritionalValues
         get() = NutritionalValues.empty
     override val asSerialized: SerializedIngredientAmount
-        get() = SerializedIngredientAmount(ident, amount)
+        get() = SerializedIngredientAmount(_ident, _amount)
+
+    val amount = _amount
 }
 
 
 @Serializable
 class SerializedIngredientAmount(val ingredientIdent :String,
                                  val amount :Float) {
-    fun deserialize () :IngredientAmount
-    {
+    fun deserialize (): IngredientAmount {
         val ingredient = IngredientProvider.findIngredient(ingredientIdent)
         return if(ingredient == null){
+            Log.e(null, "Cannot find Ingredient: $ingredientIdent")
             InvalidIngredientAmount(ingredientIdent, amount)
         } else{
             ValidIngredientAmount(ingredient, amount)

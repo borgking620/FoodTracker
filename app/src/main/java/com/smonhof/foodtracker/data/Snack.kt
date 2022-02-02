@@ -4,12 +4,15 @@ import kotlinx.serialization.Serializable
 
 abstract class Snack : CaloricIntake {
     abstract val asSerialized : SerializedSnack
+
+    companion object {
+        val empty = InvalidSnack("invalid")
+    }
 }
 
-class ValidSnack(val _label : String,
-                 val _ingredient : IngredientSnack) : Snack () {
+class ValidSnack(val _ingredient : IngredientSnack) : Snack () {
     override val displayName: String
-        get() = _label
+        get() = _ingredient._name
     override val intakeValues: NutritionalValues
         get() = _ingredient.intakeValues
     override val asSerialized: SerializedSnack
@@ -33,7 +36,7 @@ class SerializedSnack(private val _ident :String){
             InvalidSnack(_ident)
         }
         else {
-            ValidSnack(snack.displayName, snack)
+            ValidSnack(snack)
         }
 
     }

@@ -14,15 +14,18 @@ import com.smonhof.foodtracker.views.IngredientTileView
 import com.smonhof.foodtracker.data.Group
 import com.smonhof.foodtracker.data.Ingredient
 import com.smonhof.foodtracker.data.IngredientAmount
+import com.smonhof.foodtracker.data.IngredientSnack
 import com.smonhof.foodtracker.databinding.FragmentIngredientlistBinding
 import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
+import com.smonhof.foodtracker.views.SnackTileView
 
 class IngredientListFragment : Fragment() {
     private var _binding: FragmentIngredientlistBinding? = null
 
     private val binding get() = _binding!!
-    private var _group = Group("Invalid Group", emptyArray(), emptyArray())
-    private var _onSelected : (IngredientAmount) -> Unit = { ingredientAmount ->  Log.e(null,"Click on " + ingredientAmount.displayName + " has no feedback!")}
+    private var _group = Group("Invalid Group", emptyArray(), emptyArray(), emptyArray())
+    private var _onIngredientSelected : ((IngredientAmount) -> Unit)? = null
+    private var _onSnackSelected : ((IngredientSnack) -> Unit)? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +44,8 @@ class IngredientListFragment : Fragment() {
         val args = arguments?.get("ContainerGroup")
         if (args is IngredientListFragmentArguments){
             _group = args._group
-            _onSelected = args._onIngredientAmountSelected
+            _onIngredientSelected = args._onIngredientAmountSelected
+            _onSnackSelected = args._onSnackSelected
         }
         else {
             Log.e(null,"Cannot fetch arguments for IngredientListFragment")
@@ -51,17 +55,30 @@ class IngredientListFragment : Fragment() {
         binding.headerTitle.setText(_group.name)
         val ingredientList = binding.ingredientlist
         for(sub in _group.subGroups) {
+            if(sub.isEmpty(_onIngredientSelected == null, _onSnackSelected == null)){
+                continue
+            }
             val groupView = GroupTileView(view.context, sub, ::onGroupClicked)
             ingredientList.addView(groupView)
         }
-        for(ing in _group.ingredients) {
-            val ingredientView = IngredientTileView(view.context, ing, _onSelected)
-            ingredientList.addView(ingredientView)
+        val onIngredientSelected = _onIngredientSelected
+        if(onIngredientSelected != null){
+            for(ing in _group.ingredients) {
+                val ingredientView = IngredientTileView(view.context, ing, onIngredientSelected)
+                ingredientList.addView(ingredientView)
+            }
+        }
+        val onSnackSelected = _onSnackSelected
+        if(onSnackSelected != null){
+            for(snk in _group.snacks){
+                val snackView = SnackTileView(view.context, snk, onSnackSelected)
+                ingredientList.addView((snackView))
+            }
         }
     }
 
     private fun onGroupClicked(group: Group){
-        val bundle = bundleOf("ContainerGroup" to IngredientListFragmentArguments(group,_onSelected))
+        val bundle = bundleOf("ContainerGroup" to IngredientListFragmentArguments(group,_onIngredientSelected,_onSnackSelected))
         findNavController().navigate(R.id.action_IngredientList_to_IngredientList, bundle)
     }
 }

@@ -5,42 +5,56 @@
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Bierjunge (0,2)",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 200
+			"amount": 200
 		},
 		{
 			"ident": "drinks_alcoholic_beer_bj025",
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Bierjunge (0,25)",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 250
+			"amount": 250
 		},
 		{
 			"ident": "drinks_alcoholic_beer_bj033",
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Bierjunge (0,33)",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 330
+			"amount": 330
 		},
 		{
 			"ident": "drinks_alcoholic_beer_bj05",
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Bierjunge (0,5)",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 500
+			"amount": 500
 		},
 		{
 			"ident": "drinks_alcoholic_beer_bj1",
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Maß",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 1000
+			"amount": 1000
 		},
 		{
 			"ident": "drinks_alcoholic_beer_bj2",
 			"group": "drinks_alcoholic_beer",
 			"resourceId": "Kanne",
 			"ingredient": "drinks_alcoholic_beer_hell",
-			"size": 2000
+			"amount": 2000
+		},
+		{
+			"ident": "fruit_kiwi_yellow_single",
+			"group": "fruit",
+			"resourceId": "Gelbe Kiwi",
+			"ingredient": "fruit_kiwi_yellow",
+			"amount": 75
+		},
+		{
+			"ident": "fruit_banana_single",
+			"group": "fruit",
+			"resourceId": "Banane",
+			"ingredient": "fruit_banana",
+			"amount": 120
 		}
 	]
 }

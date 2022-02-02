@@ -15,8 +15,8 @@ import com.smonhof.foodtracker.data.*
 class SnackTileView : View {
 
     private val label : String
-    private val snack : Snack
-    private val onClickAction : (Snack) -> Unit
+    private val snack : IngredientSnack
+    private val onClickAction : (IngredientSnack) -> Unit
 
     private val backgroundPaint = Paint(ANTI_ALIAS_FLAG).apply {
         color = resources.getColor(R.color.green)
@@ -28,14 +28,14 @@ class SnackTileView : View {
     }
 
     constructor(context :Context, attrs: AttributeSet) : super(context, attrs){
-        snack = ValidSnack("", IngredientSnack("",NutritionalValues.empty))
+        snack = IngredientSnack.empty
         label = "Invalid"
         onClickAction = {}
 
         constructCommon()
     }
 
-    constructor(context: Context, snack: Snack, onClick: (Snack) -> Unit = {}) : super (context)
+    constructor(context: Context, snack: IngredientSnack, onClick: (IngredientSnack) -> Unit = {}) : super (context)
     {
         label = snack.displayName
         this.snack = snack

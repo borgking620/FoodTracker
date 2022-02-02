@@ -13,6 +13,7 @@ import com.smonhof.foodtracker.R
 import com.smonhof.foodtracker.data.*
 import com.smonhof.foodtracker.databinding.FragmentDayoverviewBinding
 import com.smonhof.foodtracker.fragments.arguments.CustomMealFragmentArguments
+import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
 import com.smonhof.foodtracker.fragments.arguments.MealFragmentArguments
 import com.smonhof.foodtracker.fragments.recyclerViews.CaloricIntakeRecyclerViewAdapter
 
@@ -54,6 +55,13 @@ class DayOverviewFragment : Fragment() {
         binding.buttonAddCustom.setOnClickListener{
             val bundle = bundleOf("ContainerCustomMeal" to CustomMealFragmentArguments(null){new -> currentDay._meals.add(new)})
             findNavController().navigate(R.id.action_DayOverview_to_CustomMeal, bundle)
+        }
+        binding.buttonAddSnack.setOnClickListener{
+            val bundle = bundleOf("ContainerGroup" to IngredientListFragmentArguments(IngredientProvider.getIngredients(), null){
+                new -> currentDay._meals.add(ValidSnack(new))
+                findNavController().popBackStack(R.id.DayOverviewFragment,false)
+            })
+            findNavController().navigate(R.id.action_FirstFragment_to_IngredientList, bundle)
         }
         binding.calorieDisplay.updateValue(currentDay.intakeValues)
     }

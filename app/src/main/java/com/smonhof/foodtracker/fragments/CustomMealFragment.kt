@@ -29,7 +29,6 @@ class CustomMealFragment : Fragment() {
                                container: ViewGroup?,
                                savedInstanceState: Bundle?): View? {
         _binding = FragmentCustommealBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 

@@ -1,4 +1,13 @@
 {
 	"standalonesnacks": [
+		{
+			"ident": "drinks_clubmate_500ml",
+			"group": "drinks",
+			"resourceId": "Club Mate (500ml)",
+			"calories": 100,
+			"carbs": 25,
+			"protein": 0,
+			"fat": 0
+		}
 	]
 }

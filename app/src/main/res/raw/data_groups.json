@@ -31,13 +31,8 @@
 			"resourceId": "Fleisch"
 		},
 		{
-			"ident": "snacks",
-			"parent": "",
-			"resourceId": "Snacks"
-		},
-		{
 			"ident": "drinks",
-			"parent": "snacks",
+			"parent": "ingredients",
 			"resourceId": "Getränke"
 		},
 		{
@@ -74,6 +69,21 @@
 			"ident": "fryingfat",
 			"parent": "ingredients",
 			"resourceId": "Bratfett und Öl"
+		},
+		{
+			"ident": "mushrooms",
+			"parent": "ingredients",
+			"resourceId": "Pilze"
+		},
+		{
+			"ident": "misc",
+			"parent": "ingredients",
+			"resourceId": "Sonstiges"
+		},
+		{
+			"ident": "sausage",
+			"parent": "meat",
+			"resourceId": "Wurst"
 		}
 	]
 }

@@ -296,6 +296,83 @@
 			"fat": 3,
 			"size": 1000,
 			"unit": 1
+		},
+		{
+			"ident": "mushroom_champignon",
+			"group": "mushrooms",
+			"resourceId": "Champignon",
+			"calories": 240,
+			"carbs": 6,
+			"protein": 41,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "misc_honey",
+			"group": "misc",
+			"resourceId": "Honig",
+			"calories": 3040,
+			"carbs": 820,
+			"protein": 3,
+			"fat": 0,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "misc_mustard",
+			"group": "misc",
+			"resourceId": "Senf",
+			"calories": 660,
+			"carbs": 50,
+			"protein": 44,
+			"fat": 40,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_kidneybean",
+			"group": "vegetables",
+			"resourceId": "Kidney Bohnen",
+			"calories": 1210,
+			"carbs": 160,
+			"protein": 84,
+			"fat": 10,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_pickel",
+			"group": "vegetables",
+			"resourceId": "Gewürzgurken",
+			"calories": 350,
+			"carbs": 55,
+			"protein": 12,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "meat_sausage_beef",
+			"group": "sausage",
+			"resourceId": "Rindswurst",
+			"calories": 2200,
+			"carbs": 27,
+			"protein": 180,
+			"fat": 154,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_kiwi_yellow",
+			"group": "fruit",
+			"resourceId": "Kiwi (gelb)",
+			"calories": 770,
+			"carbs": 111,
+			"protein": 9,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

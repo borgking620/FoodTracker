@@ -28,7 +28,7 @@ class GroupTileView : View {
     }
 
     constructor(context :Context, attrs: AttributeSet) : super(context, attrs){
-        group = Group("Invalid", emptyArray(), emptyArray())
+        group = Group("Invalid", emptyArray(), emptyArray(), emptyArray())
         label = "Invalid"
         onClickAction = {}
 
