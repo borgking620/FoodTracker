@@ -8,7 +8,7 @@
     <fragment
             android:id="@+id/DayOverviewFragment"
             android:name="com.smonhof.foodtracker.fragments.DayOverviewFragment"
-            android:label="@string/first_fragment_label"
+            android:label="@string/fragment_day_overview"
             tools:layout="@layout/fragment_dayoverview">
         <action
                 android:id="@+id/action_FirstFragment_to_IngredientList"
@@ -24,7 +24,7 @@
     <fragment
         android:id="@+id/IngredientListFragment"
         android:name="com.smonhof.foodtracker.fragments.IngredientListFragment"
-        android:label="Ingredient List"
+        android:label="@string/fragment_ingredient_list"
         tools:layout="@layout/fragment_ingredientlist">
         <argument
             android:name="ContainerGroup"
@@ -41,7 +41,7 @@
     <fragment
         android:id="@+id/MealContentList"
         android:name="com.smonhof.foodtracker.fragments.MealFragment"
-        android:label="Meal"
+        android:label="@string/fragment_meal_content"
         tools:layout="@layout/fragment_meal">
         <argument
             android:name="ContainerMeal"
@@ -55,7 +55,7 @@
     <fragment
         android:id="@+id/SelectIngredientAmount"
         android:name="com.smonhof.foodtracker.fragments.SelectIngredientAmountFragment"
-        android:label="SelectAmount"
+        android:label="@string/fragment_select_ingredient_amount"
         tools:layout="@layout/fragment_selectingredientamount">
         <argument
             android:name="ContainerIngredient"

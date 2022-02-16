@@ -1,0 +1,29 @@
+{
+	"resources": [
+		{
+			"ident": "cat_vegetable",
+			"icon": "cat_vegetable",
+			"locaId": "cat_vegetable"
+		},
+		{
+			"ident": "ingredient_paprika_red",
+			"icon": "ing_paprika_red",
+			"locaId": "ingredient_paprika_red"
+		},
+		{
+			"ident": "ingredient_paprika_yellow",
+			"icon": "ing_paprika_yellow",
+			"locaId": "ingredient_paprika_yellow"
+		},
+		{
+			"ident": "ingredient_onion",
+			"icon": "ing_onion",
+			"locaId": "ingredient_onion"
+		},
+		{
+			"ident": "ingredient_carrot",
+			"icon": "ing_carrot",
+			"locaId": "ingredient_carrot"
+		}
+	]
+}

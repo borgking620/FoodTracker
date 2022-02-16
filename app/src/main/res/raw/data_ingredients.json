@@ -3,7 +3,7 @@
 		{
 			"ident": "vegetable_paprika_red",
 			"group": "vegetables_paprika",
-			"resourceId": "Paprika (Rot)",
+			"resourceId": "ingredient_paprika_red",
 			"calories": 380,
 			"carbs": 64,
 			"protein": 13,
@@ -14,7 +14,7 @@
 		{
 			"ident": "vegetable_paprika_yellow",
 			"group": "vegetables_paprika",
-			"resourceId": "Paprika (Gelb)",
+			"resourceId": "ingredient_paprika_yellow",
 			"calories": 270,
 			"carbs": 60,
 			"protein": 10,
@@ -58,7 +58,7 @@
 		{
 			"ident": "vegetable_onion",
 			"group": "vegetables",
-			"resourceId": "Zwiebeln",
+			"resourceId": "ingredient_onion",
 			"calories": 400,
 			"carbs": 90,
 			"protein": 11,
@@ -69,7 +69,7 @@
 		{
 			"ident": "vegetable_carrots",
 			"group": "vegetables",
-			"resourceId": "Möhren",
+			"resourceId": "ingredient_carrot",
 			"calories": 410,
 			"carbs": 100,
 			"protein": 9,
@@ -373,6 +373,50 @@
 			"fat": 3,
 			"size": 1000,
 			"unit": 1
+		},
+		{
+			"ident": "vegetable_broccoli",
+			"group": "vegetables",
+			"resourceId": "Brokkoli",
+			"calories": 340,
+			"carbs": 50,
+			"protein": 28,
+			"fat": 4,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_peas",
+			"group": "vegetables",
+			"resourceId": "Erbsen",
+			"calories": 820,
+			"carbs": 85,
+			"protein": 60,
+			"fat": 11,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fish_tuna",
+			"group": "fish",
+			"resourceId": "Thunfisch",
+			"calories": 1300,
+			"carbs": 0,
+			"protein": 290,
+			"fat": 6,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "drinks_softdrinks_applewatermix",
+			"group": "drinks",
+			"resourceId": "Apfelschorle",
+			"calories": 260,
+			"carbs": 60,
+			"protein": 1,
+			"fat": 0,
+			"size": 1000,
+			"unit": 3
 		}
 	]
 }

@@ -1,5 +1,6 @@
 package com.smonhof.foodtracker.data
 
+import android.content.Context
 import android.content.res.Resources
 import android.util.Log
 import com.smonhof.foodtracker.R
@@ -16,19 +17,24 @@ object IngredientProvider {
     private lateinit var ingredientsByIdent : Map<String,Ingredient>
     private lateinit var snacksByIdent : Map<String, IngredientSnack>
 
-    fun init(resources: Resources){
+    fun init(resources: Resources, context: Context){
         val ingredientsFileContent = getFileContent(resources, R.raw.data_ingredients)
         val groupsFileContent = getFileContent(resources, R.raw.data_groups)
         val ingredientSnackFileContent = getFileContent(resources, R.raw.data_ingredientsnacks)
         val standaloneSnackFileContent = getFileContent(resources, R.raw.data_standalonesnacks)
+        val resourcesFileContent = getFileContent(resources, R.raw.data_resources)
 
+        val serializedResources = Json.decodeFromString<SerializedResourcesList>(resourcesFileContent).resources
         val serializedIngredients = Json.decodeFromString<SerializedIngredientList>(ingredientsFileContent).ingredients
         val serializedGroups = Json.decodeFromString<SerializedGroupList>(groupsFileContent).groups
         val serializedIngredientSnacks = Json.decodeFromString<SerializedIngredientSnackList>(ingredientSnackFileContent).ingredientsnacks
         val serializedStandaloneSnacks = Json.decodeFromString<SerializedStandaloneSnackList>(standaloneSnackFileContent).standalonesnacks
 
 
-        val ingredientsToGroups = getMapOf(serializedIngredients,{ing -> ing.group},{ing->Ingredient.fromSerialized(ing)})
+        Log.e("", "Decoding Resources")
+        val resourcesFromIdent = serializedResources.associate { r -> r.ident to Resource.fromSerialized(r,context) }
+        Log.e("", "Decoded Resources")
+        val ingredientsToGroups = getMapOf(serializedIngredients,{ing -> ing.group},{ing->Ingredient.fromSerialized(ing,resourcesFromIdent)})
         ingredientsByIdent =
             ingredientsToGroups.values.fold(emptyList<Ingredient>()) { acc, ing -> acc + ing }.associateBy { it.ident }
         // snacks require ingredientsByIdent
@@ -144,4 +150,7 @@ object IngredientProvider {
 
     @Serializable
     data class SerializedStandaloneSnackList(val standalonesnacks: List<SerializedStandaloneSnack> = emptyList())
+
+    @Serializable
+    data class SerializedResourcesList(val resources: List<SerializedResource> = emptyList())
 }

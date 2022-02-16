@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        IngredientProvider.init(resources)
+        IngredientProvider.init(resources,applicationContext)
         DataProvider.init(applicationContext)
 
         binding = ActivityMainBinding.inflate(layoutInflater)

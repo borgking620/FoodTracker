@@ -23,7 +23,7 @@ class SelectIngredientAmountFragment : Fragment() {
         _binding = FragmentSelectingredientamountBinding.inflate(inflater, container, false)
         fetchArguments()
         UpdateAmountDisplay()
-        binding.ingredientName.setText(_ingredient.name)
+        binding.ingredientName.text = _ingredient.displayName
         binding.confirmButton.setOnClickListener(::onSaveClicked)
         binding.selectSmallPortion.setOnClickListener (onPreSelectAmount(0.5f))
         binding.selectMediumPortion.setOnClickListener(onPreSelectAmount(1f))

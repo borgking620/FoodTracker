@@ -22,9 +22,9 @@
 			"amount": 330
 		},
 		{
-			"ident": "drinks_alcoholic_beer_bj05",
+			"ident": "drinks_alcoholic_beer_500ml",
 			"group": "drinks_alcoholic_beer",
-			"resourceId": "Bierjunge (0,5)",
+			"resourceId": "Hell Halbe",
 			"ingredient": "drinks_alcoholic_beer_hell",
 			"amount": 500
 		},
@@ -55,6 +55,20 @@
 			"resourceId": "Banane",
 			"ingredient": "fruit_banana",
 			"amount": 120
+		},
+		{
+			"ident": "drinks_softdrinks_applewatermix_025",
+			"group": "drinks",
+			"resourceId": "AS (0,25)",
+			"ingredient": "drinks_softdrinks_applewatermix",
+			"amount": 250
+		},
+		{
+			"ident": "drinks_softdrinks_applewatermix_033",
+			"group": "drinks",
+			"resourceId": "AS (0,33)",
+			"ingredient": "drinks_softdrinks_applewatermix",
+			"amount": 330
 		}
 	]
 }

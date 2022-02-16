@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ingredient_paprika_red_name">Rote Paprika</string>
+    <string name="ingredient_paprika_yellow_name">Gelbe Paprika</string>
+    <string name="ingredient_onion_name">Zwiebel</string>
+    <string name="ingredient_carrot_name">Möhre</string>
+    <string name="app_name">Food Tracker</string>
+    <string name="fragment_day_overview">Tagesübersicht</string>
+    <string name="fragment_ingredient_list">Auswählen</string>
+    <string name="fragment_meal_content">Zutatenliste</string>
+    <string name="fragment_select_ingredient_amount">Menge wählen</string>
+</resources>

@@ -52,7 +52,6 @@ class IngredientListFragment : Fragment() {
         }
     }
     private fun instantiateObjects(view: View){
-        binding.headerTitle.setText(_group.name)
         val ingredientList = binding.ingredientlist
         for(sub in _group.subGroups) {
             if(sub.isEmpty(_onIngredientSelected == null, _onSnackSelected == null)){

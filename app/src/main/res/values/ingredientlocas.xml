@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ingredient_paprika_red_name">red paprika</string>
+    <string name="ingredient_paprika_yellow_name">yellow paprika</string>
+    <string name="ingredient_onion_name">onion</string>
+    <string name="ingredient_carrot_name">carrot</string>
+</resources>
