@@ -24,6 +24,36 @@
 			"ident": "ingredient_carrot",
 			"icon": "ing_carrot",
 			"locaId": "ingredient_carrot"
+		},
+		{
+			"ident": "ingredient_paprika_green",
+			"icon": "",
+			"locaId": "ingredient_paprika_green"
+		},
+		{
+			"ident": "ingredient_eisberg",
+			"icon": "",
+			"locaId": "ingredient_eisberg"
+		},
+		{
+			"ident": "ingredient_romana",
+			"icon": "",
+			"locaId": "ingredient_romana"
+		},
+		{
+			"ident": "ingredient_cucumber",
+			"icon": "",
+			"locaId": "ingredient_cucumber"
+		},
+		{
+			"ident": "ingredient_emmentaler",
+			"icon": "",
+			"locaId": "ingredient_emmentaler"
+		},
+		{
+			"ident": "ingredient_cream",
+			"icon": "",
+			"locaId": "ingredient_cream"
 		}
 	]
 }

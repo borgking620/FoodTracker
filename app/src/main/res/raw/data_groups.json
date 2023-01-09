@@ -84,6 +84,11 @@
 			"ident": "sausage",
 			"parent": "meat",
 			"resourceId": "Wurst"
+		},
+		{
+			"ident": "cheese",
+			"parent": "dairy",
+			"resourceId": "Käse"
 		}
 	]
 }

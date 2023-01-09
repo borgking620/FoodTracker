@@ -10,7 +10,7 @@ class EatingDay (val date : LocalDate = LocalDate.now()) : CaloricIntake {
     override val displayName: String
         get() = date.toString()
     override val intakeValues : NutritionalValues
-        get () = _meals.fold(NutritionalValues.empty){ acc, new -> acc + new.intakeValues}
+        get() = _meals.fold(NutritionalValues.empty){ acc, new -> acc + new.intakeValues}
     val asSerialized : SerializedEatingDay
         get() {
             val meals = MutableList(0){Meal("")}
@@ -32,6 +32,7 @@ class EatingDay (val date : LocalDate = LocalDate.now()) : CaloricIntake {
                 snacks.map{it.asSerialized}
             )
         }
+    val asThumb : ThumbEatingDay get() = ThumbEatingDay(date.year, date.monthValue, date.dayOfMonth,_meals.fold(NutritionalValues.empty){acc, new -> acc + new.intakeValues})
 }
 
 @Serializable
@@ -49,4 +50,10 @@ class SerializedEatingDay(val year : Int,
         snacks.forEach{day._meals.add(it.deserialize())}
         return day
     }
+}
+
+@Serializable
+class ThumbEatingDay(var year : Int, val month: Int, val day: Int, val nutrition : NutritionalValues)
+{
+
 }

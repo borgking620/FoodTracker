@@ -1,5 +1,8 @@
 package com.smonhof.foodtracker.data
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class NutritionalValues (val Calories : Float,
                               val Carbs : Float,
                               val Protein: Float,

@@ -9,7 +9,21 @@
         android:layout_gravity="fill"
         tools:context="com.smonhof.foodtracker.fragments.DayOverviewFragment"
         android:layout_margin="8dp">
-    <com.smonhof.foodtracker.views.CalorieView android:layout_width="match_parent" android:layout_height="120dp" android:id="@+id/calorieDisplay"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="120dp" android:orientation="horizontal">
+        <com.smonhof.foodtracker.views.CalorieView android:layout_width="240dp" android:layout_weight="0" android:layout_height="match_parent" android:id="@+id/calorieDisplay"/>
+        <LinearLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+            <Button android:id = "@+id/button_view_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Month"/>
+            <Button android:id = "@+id/button_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Settings"/>
+        </LinearLayout>
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
                                                android:id="@+id/list"
                                                android:layout_height="0px"

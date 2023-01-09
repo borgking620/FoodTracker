@@ -9,12 +9,15 @@ import java.lang.Exception
 object SaveDay {
 
     fun save(context: Context, day: EatingDay){
-        val fileName = getContentFileName(day)
-        val fileContent = getContentFileContent(day)
-        Log.d(null, "Saving: $fileContent to $fileName")
+        saveFile(context, getContentFileName(day), getContentFileContent(day))
+        saveFile(context, getThumbFileName(day), getThumbFileContent(day))
+    }
+
+    private fun saveFile (context : Context, name : String, content : String){
+        Log.d(null, "Saving: $content to $name")
         try {
-            context.openFileOutput(fileName, Context.MODE_PRIVATE).use {
-                it.write(fileContent.toByteArray())
+            context.openFileOutput(name, Context.MODE_PRIVATE).use {
+                it.write(content.toByteArray())
             }
         }
         catch (e:Exception){
@@ -22,9 +25,12 @@ object SaveDay {
         }
     }
 
-    // add Thumb later
     private fun getContentFileName(day: EatingDay) : String
         = "dayContent_${day.date.year}_${day.date.monthValue}_${day.date.dayOfMonth}.json"
     private fun getContentFileContent(day:EatingDay) : String
         = Json.encodeToString(day.asSerialized)
+    private fun getThumbFileName(day: EatingDay) : String
+            = "dayThumb_${day.date.year}_${day.date.monthValue}_${day.date.dayOfMonth}.json"
+    private fun getThumbFileContent(day:EatingDay) : String
+            = Json.encodeToString(day.asThumb)
 }

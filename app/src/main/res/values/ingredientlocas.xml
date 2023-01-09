@@ -4,4 +4,10 @@
     <string name="ingredient_paprika_yellow_name">yellow paprika</string>
     <string name="ingredient_onion_name">onion</string>
     <string name="ingredient_carrot_name">carrot</string>
+    <string name="ingredient_paprika_green_name">green paprika</string>
+    <string name="ingredient_eisberg_name">eisberg lettuce</string>
+    <string name="ingredient_romana_name">romana lettuce</string>
+    <string name="ingredient_cucumber_name">cucumber</string>
+    <string name="ingredient_emmentaler_name">emmentaler cheese</string>
+    <string name="ingredient_cream_name">cream</string>
 </resources>

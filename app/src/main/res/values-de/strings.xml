@@ -9,4 +9,12 @@
     <string name="fragment_ingredient_list">Auswählen</string>
     <string name="fragment_meal_content">Zutatenliste</string>
     <string name="fragment_select_ingredient_amount">Menge wählen</string>
+    <string name="ingredient_paprika_green_name">Grüne Paprika</string>
+    <string name="ingredient_eisberg_name">Eisbergsalat</string>
+    <string name="ingredient_romana_name">Romanasalat</string>
+    <string name="ingredient_cucumber_name">Salatgurke</string>
+    <string name="ingredient_emmentaler_name">Emmentaler</string>
+    <string name="ingredient_cream_name">Sahne</string>
+    <string name="button_previous_label">←</string>
+    <string name="button_next_label">→</string>
 </resources>

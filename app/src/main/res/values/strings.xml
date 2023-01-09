@@ -4,4 +4,6 @@
     <string name="fragment_ingredient_list">select item</string>
     <string name="fragment_meal_content">ingredient list</string>
     <string name="fragment_select_ingredient_amount">select amount</string>
+    <string name="button_previous_label">←</string>
+    <string name="button_next_label">→</string>
 </resources>

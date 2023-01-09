@@ -20,6 +20,8 @@
         <action
                 android:id="@+id/action_DayOverview_to_CustomMeal"
                 app:destination="@id/CustomMeal"/>
+        <action android:id="@+id/action_DayOverview_to_MonthOverview"
+                app:destination="@id/MonthOverviewFragment"/>
     </fragment>
     <fragment
         android:id="@+id/IngredientListFragment"
@@ -37,6 +39,14 @@
         <action
             android:id="@+id/action_IngredientList_to_SelectIngredientAmount"
             app:destination="@id/SelectIngredientAmount"/>
+    </fragment>
+    <fragment
+        android:id="@+id/MonthOverviewFragment"
+        android:name="com.smonhof.foodtracker.fragments.MonthOverviewFragment"
+        android:label="month overview"
+        tools:layout="@layout/fragment_monthoverview">
+        <action android:id="@+id/action_MonthOverview_to_DayOverview"
+                app:destination="@id/DayOverviewFragment"/>
     </fragment>
     <fragment
         android:id="@+id/MealContentList"

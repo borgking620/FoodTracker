@@ -52,6 +52,9 @@ class DayOverviewFragment : Fragment() {
         binding.buttonAddMeal.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_MealOverview)
         }
+        binding.buttonViewMonth.setOnClickListener{
+            findNavController().navigate(R.id.action_DayOverview_to_MonthOverview)
+        }
         binding.buttonAddCustom.setOnClickListener{
             val bundle = bundleOf("ContainerCustomMeal" to CustomMealFragmentArguments(null){new -> currentDay._meals.add(new)})
             findNavController().navigate(R.id.action_DayOverview_to_CustomMeal, bundle)

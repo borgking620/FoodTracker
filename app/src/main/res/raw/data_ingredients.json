@@ -25,7 +25,7 @@
 		{
 			"ident": "vegetable_paprika_green",
 			"group": "vegetables_paprika",
-			"resourceId": "Paprika (Grün)",
+			"resourceId": "ingredient_paprika_green",
 			"calories": 200,
 			"carbs": 46,
 			"protein": 9,
@@ -36,7 +36,7 @@
 		{
 			"ident": "vegetable_salad_eisberg",
 			"group": "vegetables_salad",
-			"resourceId": "Eisbergsalat",
+			"resourceId": "ingredient_eisberg",
 			"calories": 130,
 			"carbs": 19,
 			"protein": 7,
@@ -47,7 +47,7 @@
 		{
 			"ident": "vegetable_salad_cucumber",
 			"group": "vegetables_salad",
-			"resourceId": "Salatgurke",
+			"resourceId": "ingredient_cucumber",
 			"calories": 140,
 			"carbs": 18,
 			"protein": 6,
@@ -91,7 +91,7 @@
 		{
 			"ident": "dairy_cream",
 			"group": "dairy",
-			"resourceId": "Sahne",
+			"resourceId": "ingredient_cream",
 			"calories": 2930,
 			"carbs": 32,
 			"protein": 25,
@@ -289,7 +289,7 @@
 		{
 			"ident": "vegetable_salad_romana",
 			"group": "vegetables_salad",
-			"resourceId": "Romanasalat",
+			"resourceId": "ingredient_romana",
 			"calories": 170,
 			"carbs": 33,
 			"protein": 12,
@@ -417,6 +417,83 @@
 			"fat": 0,
 			"size": 1000,
 			"unit": 3
+		},
+		{
+			"ident": "fruit_apple",
+			"group": "fruit",
+			"resourceId": "Apfel",
+			"calories": 520,
+			"carbs": 140,
+			"protein": 3,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_grapes_red",
+			"group": "fruit",
+			"resourceId": "Weintrauben Rot",
+			"calories": 710,
+			"carbs": 156,
+			"protein": 7,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_grapes_green",
+			"group": "fruit",
+			"resourceId": "Weintrauben Grün",
+			"calories": 710,
+			"carbs": 156,
+			"protein": 7,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_kiwi_green",
+			"group": "fruit",
+			"resourceId": "Kiwi (grün)",
+			"calories": 620,
+			"carbs": 91,
+			"protein": 10,
+			"fat": 6,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_pear",
+			"group": "fruit",
+			"resourceId": "Birne",
+			"calories": 570,
+			"carbs": 150,
+			"protein": 4,
+			"fat": 1,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_strawberry",
+			"group": "fruit",
+			"resourceId": "Erdbeeren",
+			"calories": 330,
+			"carbs": 80,
+			"protein": 7,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "emmentaler",
+			"group": "cheese",
+			"resourceId": "ingredient_emmentaler",
+			"calories": 3690,
+			"carbs": 15,
+			"protein": 277,
+			"fat": 280,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

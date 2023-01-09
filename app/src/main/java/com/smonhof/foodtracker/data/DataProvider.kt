@@ -1,6 +1,7 @@
 package com.smonhof.foodtracker.data
 
 import android.content.Context
+import android.util.Log
 import java.time.LocalDate
 
 object DataProvider {

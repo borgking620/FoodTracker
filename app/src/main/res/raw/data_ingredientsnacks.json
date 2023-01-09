@@ -69,6 +69,27 @@
 			"resourceId": "AS (0,33)",
 			"ingredient": "drinks_softdrinks_applewatermix",
 			"amount": 330
+		},
+		{
+			"ident": "fruit_apple_single",
+			"group": "fruit",
+			"resourceId": "Apfel",
+			"ingredient": "fruit_apple",
+			"amount": 183
+		},
+		{
+			"ident": "fruit_pear_single",
+			"group": "fruit",
+			"resourceId": "Birne",
+			"ingredient": "fruit_pear",
+			"amount": 180
+		},
+		{
+			"ident": "fruit_kiwi_green_single",
+			"group": "fruit",
+			"resourceId": "Grüne Kiwi",
+			"ingredient": "fruit_kiwi_green",
+			"amount": 75
 		}
 	]
 }

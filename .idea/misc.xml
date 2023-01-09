@@ -9,7 +9,8 @@
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/content_main.xml" value="0.17395833333333333" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/display_ingredient_single.xml" value="0.3515625" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_custommeal.xml" value="0.24320652173913043" />
-        <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_dayoverview.xml" value="0.1" />
+        <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_day_listitem.xml" value="0.2269021739130435" />
+        <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_dayoverview.xml" value="0.25" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_first.xml" value="0.35260416666666666" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_ingredientamount.xml" value="0.14427083333333332" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_ingredientlist.xml" value="0.24540778839088906" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_meal.xml" value="0.22" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_meal_list.xml" value="0.3385416666666667" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_meal_listitem.xml" value="0.2390625" />
+        <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_monthoverview.xml" value="0.2994791666666667" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_second.xml" value="0.17395833333333333" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/fragment_selectingredientamount.xml" value="0.67" />
         <entry key="..\:/Projects/Personal/FoodTracking/app/src/main/res/layout/ingredient_selector.xml" value="0.17291666666666666" />
