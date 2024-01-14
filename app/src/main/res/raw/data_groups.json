@@ -8,7 +8,7 @@
 		{
 			"ident": "vegetables",
 			"parent": "ingredients",
-			"resourceId": "Gemüse"
+			"resourceId": "cat_vegetable"
 		},
 		{
 			"ident": "vegetables_paprika",
@@ -33,7 +33,7 @@
 		{
 			"ident": "drinks",
 			"parent": "ingredients",
-			"resourceId": "Getränke"
+			"resourceId": "cat_drinks"
 		},
 		{
 			"ident": "drinks_alcoholic",
@@ -89,6 +89,31 @@
 			"ident": "cheese",
 			"parent": "dairy",
 			"resourceId": "Käse"
+		},
+		{
+			"ident": "drinks_soft",
+			"parent": "drinks",
+			"resourceId": "cat_drinks_soft"
+		},
+		{
+			"ident": "drinks_soft_rapp",
+			"parent": "drinks_soft",
+			"resourceId": "cat_drinks_rapp"
+		},
+		{
+			"ident": "drinks_soft_rapp_mwp",
+			"parent": "drinks_soft_rapp",
+			"resourceId": "cat_drinks_rapp_mwp"
+		},
+		{
+			"ident": "drinks_soft_rapp_juice",
+			"parent": "drinks_soft_rapp",
+			"resourceId": "cat_drinks_rapp_juice"
+		},
+		{
+			"ident": "drinks_soft_rapp_soda",
+			"parent": "drinks_soft_rapp",
+			"resourceId": "cat_drinks_rapp_soda"
 		}
 	]
 }

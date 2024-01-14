@@ -9,12 +9,9 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.smonhof.foodtracker.R
+import com.smonhof.foodtracker.data.*
 import com.smonhof.foodtracker.views.GroupTileView
 import com.smonhof.foodtracker.views.IngredientTileView
-import com.smonhof.foodtracker.data.Group
-import com.smonhof.foodtracker.data.Ingredient
-import com.smonhof.foodtracker.data.IngredientAmount
-import com.smonhof.foodtracker.data.IngredientSnack
 import com.smonhof.foodtracker.databinding.FragmentIngredientlistBinding
 import com.smonhof.foodtracker.fragments.arguments.IngredientListFragmentArguments
 import com.smonhof.foodtracker.views.SnackTileView
@@ -23,7 +20,7 @@ class IngredientListFragment : Fragment() {
     private var _binding: FragmentIngredientlistBinding? = null
 
     private val binding get() = _binding!!
-    private var _group = Group("Invalid Group", emptyArray(), emptyArray(), emptyArray())
+    private var _group = Group(Resource("Invalid Group"), emptyArray(), emptyArray(), emptyArray())
     private var _onIngredientSelected : ((IngredientAmount) -> Unit)? = null
     private var _onSnackSelected : ((IngredientSnack) -> Unit)? = null
 
@@ -38,6 +35,7 @@ class IngredientListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fetchArguments()
         instantiateObjects(view)
+        //_binding!!.debugAllContent.setOnClickListener{Log.e(null,_group.listContent(0))}
     }
 
     private fun fetchArguments(){

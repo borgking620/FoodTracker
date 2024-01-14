@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.smonhof.foodtracker.R
 import com.smonhof.foodtracker.data.Group
+import com.smonhof.foodtracker.data.Resource
 
 class GroupTileView : View {
 
@@ -28,7 +29,7 @@ class GroupTileView : View {
     }
 
     constructor(context :Context, attrs: AttributeSet) : super(context, attrs){
-        group = Group("Invalid", emptyArray(), emptyArray(), emptyArray())
+        group = Group(Resource("Invalid"), emptyArray(), emptyArray(), emptyArray())
         label = "Invalid"
         onClickAction = {}
 
@@ -37,7 +38,7 @@ class GroupTileView : View {
 
     constructor(context: Context, group: Group, onClick: (Group) -> Unit = {}) : super (context)
     {
-        label = group.name
+        label = group.resource._name
         this.group = group
         onClickAction = onClick
         var params = layoutParams

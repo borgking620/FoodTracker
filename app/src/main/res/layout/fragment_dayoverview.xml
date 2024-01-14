@@ -40,7 +40,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Save"
+                android:text="@string/button_save_label"
         />
         <Space android:layout_width="8dp" android:layout_height="match_parent"/>
         <Button
@@ -48,7 +48,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Add Meal"
+                android:text="@string/button_meal_label"
         />
         <Space android:layout_width="8dp" android:layout_height="match_parent"/>
         <Button
@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Add Snack"
+                android:text="@string/button_snack_label"
         />
         <Space android:layout_width="8dp" android:layout_height="match_parent"/>
         <Button
@@ -64,7 +64,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Add Custom"
+                android:text="@string/button_custom_label"
         />
     </LinearLayout>
 </LinearLayout>

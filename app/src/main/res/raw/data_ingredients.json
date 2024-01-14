@@ -80,7 +80,7 @@
 		{
 			"ident": "vegetable_potato",
 			"group": "vegetables",
-			"resourceId": "Kartoffel",
+			"resourceId": "ingredient_potato",
 			"calories": 690,
 			"carbs": 140,
 			"protein": 20,
@@ -102,7 +102,7 @@
 		{
 			"ident": "meat_beef_regular",
 			"group": "meat",
-			"resourceId": "Rind",
+			"resourceId": "ingredient_beef_regular",
 			"calories": 3320,
 			"carbs": 0,
 			"protein": 140,
@@ -113,7 +113,7 @@
 		{
 			"ident": "meat_beef_lean",
 			"group": "meat",
-			"resourceId": "Rind (Fettreduziert)",
+			"resourceId": "ingredient_beef_lean",
 			"calories": 2500,
 			"carbs": 0,
 			"protein": 260,
@@ -124,7 +124,7 @@
 		{
 			"ident": "meat_pork",
 			"group": "meat",
-			"resourceId": "Schwein",
+			"resourceId": "ingredient_pork",
 			"calories": 242,
 			"carbs": 0,
 			"protein": 27,
@@ -135,7 +135,7 @@
 		{
 			"ident": "meat_chicken",
 			"group": "meat",
-			"resourceId": "Hühnchen",
+			"resourceId": "ingredient_chicken",
 			"calories": 1650,
 			"carbs": 0,
 			"protein": 31,
@@ -146,7 +146,7 @@
 		{
 			"ident": "drinks_alcoholic_beer_hell",
 			"group": "drinks_alcoholic_beer",
-			"resourceId": "Bier",
+			"resourceId": "ingredient_beer",
 			"calories": 400,
 			"carbs": 36,
 			"protein": 5,
@@ -190,7 +190,7 @@
 		{
 			"ident": "fish_shrimps",
 			"group": "fish",
-			"resourceId": "Shrimps",
+			"resourceId": "ingredient_fish_shrimps",
 			"calories": 990,
 			"carbs": 2,
 			"protein": 240,
@@ -421,7 +421,7 @@
 		{
 			"ident": "fruit_apple",
 			"group": "fruit",
-			"resourceId": "Apfel",
+			"resourceId": "ingredient_fruit_apple",
 			"calories": 520,
 			"carbs": 140,
 			"protein": 3,
@@ -494,6 +494,127 @@
 			"fat": 280,
 			"size": 1000,
 			"unit": 1
+		},
+		{
+			"ident": "vegetable_redbeets",
+			"group": "vegetables",
+			"resourceId": "ingredient_vegetable_redbeets",
+			"calories": 1060,
+			"carbs": 129,
+			"protein": 10,
+			"fat": 5,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fruit_mango",
+			"group": "fruit",
+			"resourceId": "ingredient_fruit_mango",
+			"calories": 600,
+			"carbs": 150,
+			"protein": 8,
+			"fat": 4,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "dairy_yogurt_regular",
+			"group": "dairy",
+			"resourceId": "ingredient_dairy_yogurt_regular",
+			"calories": 640,
+			"carbs": 66,
+			"protein": 53,
+			"fat": 15,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "dairy_yogurt_greek",
+			"group": "dairy",
+			"resourceId": "ingredient_dairy_yogurt_greek",
+			"calories": 1120,
+			"carbs": 36,
+			"protein": 33,
+			"fat": 94,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "nuts_almonds",
+			"group": "nuts",
+			"resourceId": "ingredient_nuts_almonds",
+			"calories": 6190,
+			"carbs": 57,
+			"protein": 240,
+			"fat": 530,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "cereal_oatmeal",
+			"group": "cereal",
+			"resourceId": "ingredient_cereal_oatmeal",
+			"calories": 3720,
+			"carbs": 587,
+			"protein": 135,
+			"fat": 70,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_chilli_red",
+			"group": "vegetables_paprika",
+			"resourceId": "ingredient_vegetable_chilli_red",
+			"calories": 320,
+			"carbs": 52,
+			"protein": 9,
+			"fat": 4,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_chilli_yellow",
+			"group": "vegetables_paprika",
+			"resourceId": "ingredient_vegetable_chilli_yellow",
+			"calories": 300,
+			"carbs": 53,
+			"protein": 12,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_chilli_green",
+			"group": "vegetables_paprika",
+			"resourceId": "ingredient_vegetable_chilli_green",
+			"calories": 160,
+			"carbs": 26,
+			"protein": 8,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "fuit_nectarine",
+			"group": "fruit",
+			"resourceId": "ingredient_fruit_nectarine",
+			"calories": 440,
+			"carbs": 110,
+			"protein": 11,
+			"fat": 3,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "misc_balsamico_creme",
+			"group": "misc",
+			"resourceId": "ingredient_misc_balsamico_creme",
+			"calories": 2510,
+			"carbs": 589,
+			"protein": 9,
+			"fat": 0,
+			"size": 1000,
+			"unit": 3
 		}
 	]
 }

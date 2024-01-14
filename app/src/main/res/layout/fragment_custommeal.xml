@@ -25,7 +25,7 @@
                   android:layout_height="wrap_content">
         <TextView android:layout_width="90dp"
                   android:layout_height="wrap_content"
-                  android:text="Calories"/>
+                  android:text="@string/label_calories_label"/>
         <EditText android:layout_width="match_parent"
                   android:layout_height="48dp"
                   android:id="@+id/meal_calories"
@@ -37,7 +37,7 @@
                   android:layout_height="wrap_content">
         <TextView android:layout_width="90dp"
                   android:layout_height="wrap_content"
-                  android:text="Carbs"/>
+                  android:text="@string/label_carbs_label"/>
         <EditText android:layout_width="match_parent"
                   android:layout_height="48dp"
                   android:id="@+id/meal_carbs"
@@ -49,7 +49,7 @@
                   android:layout_height="wrap_content">
         <TextView android:layout_width="90dp"
                   android:layout_height="wrap_content"
-                  android:text="Protein"/>
+                  android:text="@string/label_protein_label"/>
         <EditText android:layout_width="match_parent"
                   android:layout_height="48dp"
                   android:id="@+id/meal_protein"
@@ -61,10 +61,22 @@
                   android:layout_height="wrap_content">
         <TextView android:layout_width="90dp"
                   android:layout_height="wrap_content"
-                  android:text="Fat"/>
+                  android:text="@string/label_fat_label"/>
         <EditText android:layout_width="match_parent"
                   android:layout_height="48dp"
                   android:id="@+id/meal_fat"
+                  android:hint="Amount"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_portion_label"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:id="@+id/meal_portions"
                   android:hint="Amount"
                   android:singleLine="true"
                   android:inputType="numberDecimal"/>
@@ -82,5 +94,6 @@
                android:layout_height="match_parent"
                android:layout_weight="1"/>
     </LinearLayout>
+
     <Space android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
 </LinearLayout>

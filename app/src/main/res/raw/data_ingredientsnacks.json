@@ -90,6 +90,13 @@
 			"resourceId": "Grüne Kiwi",
 			"ingredient": "fruit_kiwi_green",
 			"amount": 75
+		},
+		{
+			"ident": "fruit_mango_single",
+			"group": "fruit",
+			"resourceId": "ingredient_fruit_mango",
+			"ingredient": "fruit_mango",
+			"amount": 250
 		}
 	]
 }

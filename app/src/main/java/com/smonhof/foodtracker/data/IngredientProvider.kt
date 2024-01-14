@@ -39,8 +39,8 @@ object IngredientProvider {
             ingredientsToGroups.values.fold(emptyList<Ingredient>()) { acc, ing -> acc + ing }.associateBy { it.ident }
         // snacks require ingredientsByIdent
         val snacksToGroups = mergeMaps(
-            getMapOf(serializedStandaloneSnacks,{ snk -> snk.group},{ snk -> IngredientSnack.fromSerialized(snk)}),
-            getMapOf(serializedIngredientSnacks,{snk -> snk.group},{snk -> IngredientSnack.fromSerialized(snk)})
+            getMapOf(serializedStandaloneSnacks,{ snk -> snk.group},{ snk -> IngredientSnack.fromSerialized(snk, resourcesFromIdent)}),
+            getMapOf(serializedIngredientSnacks,{snk -> snk.group},{snk -> IngredientSnack.fromSerialized(snk, resourcesFromIdent)})
         )
 
         snacksByIdent = snacksToGroups.values.fold(emptyList<IngredientSnack>()){acc, snk -> acc + snk}.associateBy { it._ident }
@@ -48,7 +48,7 @@ object IngredientProvider {
         val groupsToHierarchy = getMapOf(serializedGroups,{grp -> grp.parent},{grp->grp})
         val convertedGroups = emptyMap<String,Group>().toMutableMap()
         val parentGroups = groupsToHierarchy[""]?.mapNotNull call@{
-            val newGroup = getGroup(it, convertedGroups, ingredientsToGroups, groupsToHierarchy, snacksToGroups)
+            val newGroup = getGroup(it, convertedGroups, ingredientsToGroups, groupsToHierarchy, snacksToGroups, resourcesFromIdent)
             if (newGroup != null) return@call Pair(it.ident, newGroup) else return@call null
         }?.toMap()?: emptyMap()
 
@@ -59,7 +59,8 @@ object IngredientProvider {
                           convertedGroups: MutableMap<String, Group>,
                           allIngredients : Map<String,List<Ingredient>>,
                           groups: Map<String, List<SerializedGroup>>,
-                          snacks: Map<String, List<IngredientSnack>>) : Group?
+                          snacks: Map<String, List<IngredientSnack>>,
+                          res : Map<String, Resource>) : Group?
     {
         if(convertedGroups.containsKey(group.ident)){
             return convertedGroups[group.ident]
@@ -68,13 +69,13 @@ object IngredientProvider {
         val subgroups =
             (if (groups.contains(group.ident)) groups[group.ident]!! else emptyList())
             .map{
-            getGroup(it, convertedGroups, allIngredients, groups, snacks)
+            getGroup(it, convertedGroups, allIngredients, groups, snacks, res)
         }.filterNotNull().toTypedArray()
 
         val ingredients = allIngredients?.get(group.ident)?.toTypedArray()?: emptyArray()
 
         val snacks = snacks?.get(group.ident)?.toTypedArray()?: emptyArray()
-        val convertedGroup = Group(group.resourceId, subgroups, ingredients, snacks)
+        val convertedGroup = Group(res[group.resourceId] ?:Resource(group.resourceId), subgroups, ingredients, snacks)
         convertedGroups[group.ident] = convertedGroup
         return convertedGroup
     }
@@ -126,7 +127,7 @@ object IngredientProvider {
 
     fun getIngredients(): Group {
         if(group == null){
-            return Group("", emptyArray(), emptyArray(), emptyArray())
+            return Group(Resource(""), emptyArray(), emptyArray(), emptyArray())
         }
         return group!!
     }

@@ -54,6 +54,156 @@
 			"ident": "ingredient_cream",
 			"icon": "",
 			"locaId": "ingredient_cream"
+		},
+		{
+			"ident": "ingredient_vegetable_redbeets",
+			"icon": "",
+			"locaId": "ingredient_vegetable_redbeets"
+		},
+		{
+			"ident": "ingredient_fruit_mango",
+			"icon": "",
+			"locaId": "ingredient_fruit_mango"
+		},
+		{
+			"ident": "ingredient_dairy_yogurt_regular",
+			"icon": "",
+			"locaId": "ingredient_dairy_yogurt_regular"
+		},
+		{
+			"ident": "ingredient_dairy_yogurt_greek",
+			"icon": "",
+			"locaId": "ingredient_dairy_yogurt_greek"
+		},
+		{
+			"ident": "ingredient_nuts_almonds",
+			"icon": "",
+			"locaId": "ingredient_nuts_almonds"
+		},
+		{
+			"ident": "ingredient_cereal_oatmeal",
+			"icon": "",
+			"locaId": "ingredient_cereal_oatmeal"
+		},
+		{
+			"ident": "ingredient_vegetable_chilli_red",
+			"icon": "",
+			"locaId": "ingredient_vegetable_chilli_red"
+		},
+		{
+			"ident": "ingredient_vegetable_chilli_yellow",
+			"icon": "",
+			"locaId": "ingredient_vegetable_chilli_yellow"
+		},
+		{
+			"ident": "ingredient_vegetable_chilli_green",
+			"icon": "",
+			"locaId": "ingredient_vegetable_chilli_green"
+		},
+		{
+			"ident": "ingredient_fish_shrimps",
+			"icon": "",
+			"locaId": "ingredient_fish_shrimps"
+		},
+		{
+			"ident": "ingredient_fruit_nectarine",
+			"icon": "",
+			"locaId": "ingredient_fruit_nectarine"
+		},
+		{
+			"ident": "ingredient_fruit_apple",
+			"icon": "",
+			"locaId": "ingredient_fruit_apple"
+		},
+		{
+			"ident": "ingredient_misc_balsamico_creme",
+			"icon": "",
+			"locaId": "ingredient_misc_balsamico_creme"
+		},
+		{
+			"ident": "ingredient_potato",
+			"icon": "",
+			"locaId": "ingredient_potato"
+		},
+		{
+			"ident": "ingredient_beef_regular",
+			"icon": "",
+			"locaId": "ingredient_beef_regular"
+		},
+		{
+			"ident": "ingredient_beef_lean",
+			"icon": "",
+			"locaId": "ingredient_beef_lean"
+		},
+		{
+			"ident": "ingredient_pork",
+			"icon": "",
+			"locaId": "ingredient_pork"
+		},
+		{
+			"ident": "ingredient_chicken",
+			"icon": "",
+			"locaId": "ingredient_chicken"
+		},
+		{
+			"ident": "ingredient_beer",
+			"icon": "",
+			"locaId": "ingredient_beer"
+		},
+		{
+			"ident": "cat_drinks",
+			"icon": "",
+			"locaId": "cat_drinks"
+		},
+		{
+			"ident": "cat_drinks_rapp",
+			"icon": "",
+			"locaId": "cat_drinks_rapp"
+		},
+		{
+			"ident": "cat_drinks_rapp_mwp",
+			"icon": "",
+			"locaId": "cat_drinks_rapp_mwp"
+		},
+		{
+			"ident": "cat_drinks_rapp_juice",
+			"icon": "",
+			"locaId": "cat_drinks_rapp_juice"
+		},
+		{
+			"ident": "cat_drinks_rapp_soda",
+			"icon": "",
+			"locaId": "cat_drinks_rapp_soda"
+		},
+		{
+			"ident": "cat_drinks_soft",
+			"icon": "",
+			"locaId": "cat_drinks_soft"
+		},
+		{
+			"ident": "standalone_rapp_grapecranberry",
+			"icon": "",
+			"locaId": "standalone_rapp_grapecranberry"
+		},
+		{
+			"ident": "standalone_rapp_orangeginger",
+			"icon": "",
+			"locaId": "standalone_rapp_orangeginger"
+		},
+		{
+			"ident": "standalone_rapp_pear",
+			"icon": "",
+			"locaId": "standalone_rapp_pear"
+		},
+		{
+			"ident": "standalone_rapp_appleandpear",
+			"icon": "",
+			"locaId": "standalone_rapp_appleandpear"
+		},
+		{
+			"ident": "standalone_rapp_spezi",
+			"icon": "",
+			"locaId": "standalone_rapp_spezi"
 		}
 	]
 }

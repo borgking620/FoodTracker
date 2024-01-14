@@ -17,5 +17,7 @@
             android:layoutDirection="inherit" android:clickable="true" android:clipToPadding="false"
             android:fadeScrollbars="true" android:layout_margin="4dp">
     </android.widget.GridLayout>
-
+    <!--
+    <Button app:layout_constraintBottom_toBottomOf="parent" android:layout_width="match_parent" android:layout_height="50dp" android:id="@+id/debug_all_content" android:text="output all ingredients"/>
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>

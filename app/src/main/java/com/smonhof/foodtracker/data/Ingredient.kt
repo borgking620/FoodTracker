@@ -17,7 +17,7 @@ class Ingredient (val resource: Resource,
 
         fun fromSerialized (serialized: SerializedIngredient, res : Map<String,Resource>) =
             Ingredient(
-                res.get(serialized.resourceId)?:Resource(serialized.resourceId),
+                res[serialized.resourceId] ?:Resource(serialized.resourceId),
                 serialized.ident,
                 NutritionalValues( serialized.calories.toFloat() / serialized.size.toFloat(),
                     serialized.carbs.toFloat() / serialized.size.toFloat(),

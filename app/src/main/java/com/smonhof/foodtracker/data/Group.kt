@@ -2,7 +2,7 @@ package com.smonhof.foodtracker.data
 
 import kotlinx.serialization.Serializable
 
-class Group (val name : String,
+class Group (val resource : Resource,
              val subGroups : Array<Group>,
              val ingredients :Array<Ingredient>,
              val snacks : Array<IngredientSnack>){
@@ -12,8 +12,27 @@ class Group (val name : String,
                 (ignoreSnacks || snacks.size == 0) &&
                 subGroups.firstOrNull { grp -> !grp.isEmpty(ignoreIngredients, ignoreSnacks) } == null
 
+    fun listContent(insetCount : Int) : String{
+        val inset = "| ".repeat(insetCount)
+        val stringbuilder = StringBuilder()
+        stringbuilder.append(inset)
+        stringbuilder.append("[G]" + resource._name + "\n")
+        for(gr in subGroups){
+            stringbuilder.append(gr.listContent(insetCount + 1))
+        }
+        for(ing in ingredients){
+            stringbuilder.append(inset)
+            stringbuilder.append("|- [I]" + ing.resource._name + "\n")
+        }
+        for(snk in snacks){
+            stringbuilder.append(inset)
+            stringbuilder.append("|- [S]" + snk._resource._name + "\n")
+        }
+        return stringbuilder.toString()
+    }
+
     companion object{
-        val emtpy = Group("", emptyArray(), emptyArray(), emptyArray())
+        val emtpy = Group(Resource(""), emptyArray(), emptyArray(), emptyArray())
     }
 }
 

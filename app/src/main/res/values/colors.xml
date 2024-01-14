@@ -10,8 +10,10 @@
     <color name="blue">#FF99CCFF</color>
     <color name="red">#FFFF99CC</color>
     <color name="green">#FF88FFAA</color>
-    <color name="calorieBackground">#FF116622</color>
-    <color name="calorieForeground">#FF33cc33</color>
-    <color name="nutritionBackground">#40220B</color>
-    <color name="nutritionForeground">#D57909</color>
+    <color name="calorieBackground">#095A19</color>
+    <color name="calorieForeground">#63D863</color>
+    <color name="nutritionBackground">#FFB13B</color>
+    <color name="nutritionForeground">#785000</color>
+    <color name="mainColor">#007BF4</color>
+    <color name="mainColorVariant">#004991</color>
 </resources>

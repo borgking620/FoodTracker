@@ -8,6 +8,51 @@
 			"carbs": 25,
 			"protein": 0,
 			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_mwp_grapecranberry",
+			"group": "drinks_soft_rapp_mwp",
+			"resourceId": "standalone_rapp_grapecranberry",
+			"calories": 80,
+			"carbs": 19,
+			"protein": 0,
+			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_mwp_orangeginger",
+			"group": "drinks_soft_rapp_mwp",
+			"resourceId": "standalone_rapp_orangeginger",
+			"calories": 80,
+			"carbs": 18,
+			"protein": 0,
+			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_mwp_pear",
+			"group": "drinks_soft_rapp_mwp",
+			"resourceId": "standalone_rapp_pear",
+			"calories": 90,
+			"carbs": 225,
+			"protein": 0,
+			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_juice_applepear",
+			"group": "drinks_soft_rapp_juice",
+			"resourceId": "standalone_rapp_appleandpear",
+			"calories": 225,
+			"carbs": 55,
+			"protein": 0,
+			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_soda_spezi",
+			"group": "drinks_soft_rapp_soda",
+			"resourceId": "standalone_rapp_spezi",
+			"calories": 195,
+			"carbs": 48,
+			"protein": 0,
+			"fat": 0
 		}
 	]
 }

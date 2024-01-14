@@ -23,7 +23,7 @@ class Resource (val _name: String,
             context.resources.getString(
                 context.resources.getIdentifier(locaId,"string", context.packageName))
         } catch (e:Exception){
-            ""}
+            "$locaId (Not found)"}
 
         fun loadBitmap (fileName : String, context: Context) : Bitmap? {
             try {

@@ -22,6 +22,7 @@ class CustomMealFragment : Fragment() {
     private var _carbs : Float = 0f
     private var _protein : Float = 0f
     private var _fat : Float = 0f
+    private var _portions : Float = 1f
 
     private val binding get() = _binding!!
 
@@ -37,7 +38,7 @@ class CustomMealFragment : Fragment() {
         fetchArguments()
 
         binding.buttonSave.setOnClickListener {
-            _onFinished(CustomMeal(_name,_calories,_carbs,_protein,_fat))
+            _onFinished(CustomMeal(_name,_calories,_carbs,_protein,_fat, _portions))
             findNavController().popBackStack()
         }
         binding.mealName.doOnTextChanged { text, _, _, _ ->
@@ -47,6 +48,7 @@ class CustomMealFragment : Fragment() {
         binding.mealCarbs.doOnTextChanged (onTextChanged{i-> _carbs = i})
         binding.mealProtein.doOnTextChanged (onTextChanged{i-> _protein = i})
         binding.mealFat.doOnTextChanged (onTextChanged {i-> _fat = i})
+        binding.mealPortions.doOnTextChanged (onTextChanged {i-> _portions = i})
     }
 
     private fun onTextChanged(action: (Float) -> Unit) : (CharSequence?, Int,Int,Int) -> Unit{
@@ -68,11 +70,13 @@ class CustomMealFragment : Fragment() {
                 _carbs = previousMeal._carbs
                 _protein = previousMeal._protein
                 _fat = previousMeal._fat
+                _portions = previousMeal._portions
                 binding.mealName.setText(_name)
                 binding.mealCalories.setText(_calories.toString())
                 binding.mealCarbs.setText(_carbs.toString())
                 binding.mealProtein.setText(_protein.toString())
                 binding.mealFat.setText(_fat.toString())
+                binding.mealPortions.setText(_portions.toString())
 
             }
             _onFinished = args._onFinished

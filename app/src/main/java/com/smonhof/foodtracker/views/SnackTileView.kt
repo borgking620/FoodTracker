@@ -1,9 +1,11 @@
 package com.smonhof.foodtracker.views
 
 import android.content.Context
+import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Paint.ANTI_ALIAS_FLAG
+import android.graphics.Rect
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
@@ -16,6 +18,7 @@ class SnackTileView : View {
 
     private val label : String
     private val snack : IngredientSnack
+    private val _bitmap : Bitmap?
     private val onClickAction : (IngredientSnack) -> Unit
 
     private val backgroundPaint = Paint(ANTI_ALIAS_FLAG).apply {
@@ -31,13 +34,15 @@ class SnackTileView : View {
         snack = IngredientSnack.empty
         label = "Invalid"
         onClickAction = {}
+        _bitmap = null
 
         constructCommon()
     }
 
     constructor(context: Context, snack: IngredientSnack, onClick: (IngredientSnack) -> Unit = {}) : super (context)
     {
-        label = snack.displayName
+        label = snack._resource._name
+        _bitmap = snack._resource._icon
         this.snack = snack
         onClickAction = onClick
         var params = layoutParams
@@ -63,7 +68,12 @@ class SnackTileView : View {
         super.onDraw(canvas)
         canvas.apply {
             drawRect(2f,2f,width.toFloat()-4f,height.toFloat()-4f,backgroundPaint)
-            drawText(label,8f,8f + textPaint.textSize,textPaint)
+            if(_bitmap != null){
+                drawBitmap(_bitmap,null, Rect(2,2,width-4, height-4),textPaint)
+            }
+            else{
+                drawText(label,8f,8f + textPaint.textSize,textPaint)
+            }
         }
     }
 

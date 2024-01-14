@@ -12,7 +12,7 @@ abstract class Snack : CaloricIntake {
 
 class ValidSnack(val _ingredient : IngredientSnack) : Snack () {
     override val displayName: String
-        get() = _ingredient._name
+        get() = _ingredient.displayName
     override val intakeValues: NutritionalValues
         get() = _ingredient.intakeValues
     override val asSerialized: SerializedSnack
