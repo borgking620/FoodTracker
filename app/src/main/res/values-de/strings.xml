@@ -57,4 +57,9 @@
     <string name="standalone_rapp_pear_name">Birne</string>
     <string name="standalone_rapp_appleandpear_name">Apfel-Birne</string>
     <string name="standalone_rapp_spezi_name">Cola Mix</string>
+    <string name="standalone_rapp_lemon_name">Zitrone</string>
+    <string name="ingredient_vegetable_olive_name">Oliven</string>
+    <string name="ingredient_dairy_cheese_feta_name">Feta</string>
+    <string name="cat_snacks_name">Snacks</string>
+    <string name="standalone_snack_breadroll_salami_name">Salami-Semmel</string>
 </resources>

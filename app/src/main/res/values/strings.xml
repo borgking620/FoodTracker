@@ -46,4 +46,9 @@
     <string name="standalone_rapp_pear_name">Pear</string>
     <string name="standalone_rapp_appleandpear_name">apple &amp; pear</string>
     <string name="standalone_rapp_spezi_name">cola mix</string>
+    <string name="standalone_rapp_lemon_name">Lemon</string>
+    <string name="ingredient_vegetable_olive_name">olive</string>
+    <string name="ingredient_dairy_cheese_feta_name">feta cheese</string>
+    <string name="cat_snacks_name">snacks</string>
+    <string name="standalone_snack_breadroll_salami_name">Breadroll (Salami)</string>
 </resources>

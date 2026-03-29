@@ -615,6 +615,28 @@
 			"fat": 0,
 			"size": 1000,
 			"unit": 3
+		},
+		{
+			"ident": "vegetable_olives",
+			"group": "vegetables",
+			"resourceId": "ingredient_vegetable_olive",
+			"calories": 1150,
+			"carbs": 60,
+			"protein": 8,
+			"fat": 110,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "dairy_cheese_feta",
+			"group": "cheese",
+			"resourceId": "ingredient_dairy_cheese_feta",
+			"calories": 2640,
+			"carbs": 41,
+			"protein": 140,
+			"fat": 210,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

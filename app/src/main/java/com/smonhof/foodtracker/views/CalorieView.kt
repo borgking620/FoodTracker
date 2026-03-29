@@ -49,11 +49,8 @@ class CalorieView : View {
         postInvalidate()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        if(canvas == null){
-            return
-        }
         val useWidthReference =height * 4f / 3f > width
         val actualHeight : Float = if (useWidthReference) width* 3f / 4f else height.toFloat()
         val actualWidth : Float = if (useWidthReference) width.toFloat() else height * 4f / 3f

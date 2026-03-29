@@ -204,6 +204,31 @@
 			"ident": "standalone_rapp_spezi",
 			"icon": "",
 			"locaId": "standalone_rapp_spezi"
+		},
+		{
+			"ident": "standalone_rapp_lemon",
+			"icon": "",
+			"locaId": "standalone_rapp_lemon"
+		},
+		{
+			"ident": "ingredient_vegetable_olive",
+			"icon": "",
+			"locaId": "ingredient_vegetable_olive"
+		},
+		{
+			"ident": "ingredient_dairy_cheese_feta",
+			"icon": "",
+			"locaId": "ingredient_dairy_cheese_feta"
+		},
+		{
+			"ident": "cat_snacks",
+			"icon": "",
+			"locaId": "cat_snacks"
+		},
+		{
+			"ident": "standalone_snack_breadroll_salami",
+			"icon": "",
+			"locaId": "standalone_snack_breadroll_salami"
 		}
 	]
 }

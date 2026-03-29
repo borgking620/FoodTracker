@@ -114,6 +114,11 @@
 			"ident": "drinks_soft_rapp_soda",
 			"parent": "drinks_soft_rapp",
 			"resourceId": "cat_drinks_rapp_soda"
+		},
+		{
+			"ident": "snacks",
+			"parent": "ingredients",
+			"resourceId": "cat_snacks"
 		}
 	]
 }

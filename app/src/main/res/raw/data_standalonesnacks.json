@@ -53,6 +53,24 @@
 			"carbs": 48,
 			"protein": 0,
 			"fat": 0
+		},
+		{
+			"ident": "drinks_rapp_mwp_lemon",
+			"group": "drinks_soft_rapp_mwp",
+			"resourceId": "standalone_rapp_lemon",
+			"calories": 55,
+			"carbs": 125,
+			"protein": 0,
+			"fat": 0
+		},
+		{
+			"ident": "snack_breadroll_salami",
+			"group": "snacks",
+			"resourceId": "standalone_snack_breadroll_salami",
+			"calories": 245,
+			"carbs": 231,
+			"protein": 79,
+			"fat": 129
 		}
 	]
 }
