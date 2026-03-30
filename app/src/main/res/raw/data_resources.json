@@ -229,6 +229,11 @@
 			"ident": "standalone_snack_breadroll_salami",
 			"icon": "",
 			"locaId": "standalone_snack_breadroll_salami"
+		},
+		{
+			"ident": "ingredient_dairy_curd_lean",
+			"icon": "",
+			"locaId": "ingredient_dairy_curd_lean"
 		}
 	]
 }

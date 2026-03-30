@@ -637,6 +637,17 @@
 			"fat": 210,
 			"size": 1000,
 			"unit": 1
+		},
+		{
+			"ident": "dairy_curd_lean",
+			"group": "dairy",
+			"resourceId": "ingredient_dairy_curd_lean",
+			"calories": 660,
+			"carbs": 41,
+			"protein": 120,
+			"fat": 2,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

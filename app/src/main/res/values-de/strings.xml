@@ -62,4 +62,5 @@
     <string name="ingredient_dairy_cheese_feta_name">Feta</string>
     <string name="cat_snacks_name">Snacks</string>
     <string name="standalone_snack_breadroll_salami_name">Salami-Semmel</string>
+    <string name="ingredient_dairy_curd_lean_name">Quark (mager)</string>
 </resources>
