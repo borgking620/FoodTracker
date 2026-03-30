@@ -56,6 +56,7 @@ class MealFragment : Fragment() {
             }
         }
         binding.addIngredientButton.setOnClickListener{
+            ActivityProvider.setWindowFixed(true)
             val args = IngredientListFragmentArguments(IngredientProvider.getIngredients(), ::ingredientAmountSelected)
             findNavController().navigate(R.id.action_MealContent_to_IngredientList, bundleOf("ContainerGroup" to args))
         }
@@ -63,6 +64,7 @@ class MealFragment : Fragment() {
             if(addMealToDay){
                 DataProvider.getCurrentDay()._meals.add(meal)
             }
+            ActivityProvider.setWindowFixed(false)
             findNavController().popBackStack()
         }
         binding.mealName.setText(meal.name)

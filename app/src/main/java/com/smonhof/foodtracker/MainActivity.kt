@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.smonhof.foodtracker.data.ActivityProvider
 import com.smonhof.foodtracker.data.DataProvider
 import com.smonhof.foodtracker.data.IngredientProvider
 import com.smonhof.foodtracker.databinding.ActivityMainBinding
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        ActivityProvider.init(window)
         IngredientProvider.init(resources,applicationContext)
         DataProvider.init(applicationContext)
 
