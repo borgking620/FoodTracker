@@ -4,4 +4,7 @@
         <attr name="title" format="string" localization="suggested" />
         <attr name="image" format="reference" />
     </declare-styleable>
+    <declare-styleable name="CalorieView">
+        <attr name="showMacros" format="boolean" default="false" />
+    </declare-styleable>
 </resources>

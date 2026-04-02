@@ -13,6 +13,7 @@ import com.smonhof.foodtracker.data.NutritionalValues
 class CalorieView : View {
 
     private var _values: NutritionalValues
+    private val _showMacros : Boolean
 
     private val calorieBackgroundPaint = Paint(ANTI_ALIAS_FLAG).apply{
         color =resources.getColor(R.color.calorieBackground)
@@ -37,12 +38,35 @@ class CalorieView : View {
         textSize = 42f
         textAlign = Paint.Align.CENTER
     }
+    private val textPaintMacros = Paint(ANTI_ALIAS_FLAG).apply {
+        color = resources.getColor(R.color.white)
+        textSize = 42f
+        textAlign = Paint.Align.LEFT
+    }
+
 
     constructor(context: Context, attrs: AttributeSet) : super(context,attrs){
         _values = NutritionalValues.empty
+        context.theme.obtainStyledAttributes(attrs, R.styleable.CalorieView,0,0).apply {
+            try {
+                _showMacros = getBoolean(R.styleable.CalorieView_showMacros, false)
+            }
+            finally {
+                recycle()
+            }
+        }
+
     }
     constructor(context: Context, attrs: AttributeSet, values: NutritionalValues) : super(context,attrs){
         _values = values
+        context.theme.obtainStyledAttributes(attrs, R.styleable.CalorieView,0,0).apply {
+            try {
+                _showMacros = getBoolean(R.styleable.CalorieView_showMacros, false)
+            }
+            finally {
+                recycle()
+            }
+        }
     }
     fun updateValue(values: NutritionalValues){
         _values = values
@@ -89,6 +113,12 @@ class CalorieView : View {
                 nutritionForegroundPaint)
             drawText(_values.Calories.toString()+"/",leftOffset + actualWidth * 0.375f,actualHeight * 0.5f,textPaint)
             drawText(recommended.Calories.toString(),leftOffset + actualWidth * 0.375f,actualHeight * 0.5f + 42f,textPaint)
+            if(_showMacros){
+                drawText(_values.Carbs.toString()+" carbs", leftOffset + actualWidth + 5, actualHeight * 0.1666f + 21, textPaintMacros)
+                drawText(_values.Protein.toString()+" protein", leftOffset + actualWidth + 5, actualHeight * 0.5f + 21, textPaintMacros)
+                drawText(_values.Fat.toString()+" fat", leftOffset + actualWidth + 5, actualHeight * 0.8333f + 21, textPaintMacros)
+
+            }
         }
     }
 
