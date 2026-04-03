@@ -648,6 +648,28 @@
 			"fat": 2,
 			"size": 1000,
 			"unit": 1
+		},
+		{
+			"ident": "nuts_hazelnuts",
+			"group": "nuts",
+			"resourceId": "ingredient_nuts_hazelnuts",
+			"calories": 6640,
+			"carbs": 60,
+			"protein": 162,
+			"fat": 633,
+			"size": 1000,
+			"unit": 1
+		},
+		{
+			"ident": "vegetable_avocado",
+			"group": "vegetables",
+			"resourceId": "ingredient_vegetables_avocado",
+			"calories": 1380,
+			"carbs": 142,
+			"protein": 55,
+			"fat": 1125,
+			"size": 1000,
+			"unit": 1
 		}
 	]
 }

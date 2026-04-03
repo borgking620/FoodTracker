@@ -63,4 +63,6 @@
     <string name="cat_snacks_name">Snacks</string>
     <string name="standalone_snack_breadroll_salami_name">Salami-Semmel</string>
     <string name="ingredient_dairy_curd_lean_name">Quark (mager)</string>
+    <string name="ingredient_nuts_hazelnuts_name">Haselnuss</string>
+    <string name="ingredient_vegetable_avocado_name">Avocado</string>
 </resources>

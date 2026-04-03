@@ -234,6 +234,16 @@
 			"ident": "ingredient_dairy_curd_lean",
 			"icon": "",
 			"locaId": "ingredient_dairy_curd_lean"
+		},
+		{
+			"ident": "ingredient_nuts_hazelnuts",
+			"icon": "",
+			"locaId": "ingredient_nuts_hazelnuts"
+		},
+		{
+			"ident": "ingredient_vegetable_avocado",
+			"icon": "",
+			"locaId": "ingredient_vegetable_avocado"
 		}
 	]
 }

@@ -114,9 +114,9 @@ class CalorieView : View {
             drawText(_values.Calories.toString()+"/",leftOffset + actualWidth * 0.375f,actualHeight * 0.5f,textPaint)
             drawText(recommended.Calories.toString(),leftOffset + actualWidth * 0.375f,actualHeight * 0.5f + 42f,textPaint)
             if(_showMacros){
-                drawText(_values.Carbs.toString()+" carbs", leftOffset + actualWidth + 5, actualHeight * 0.1666f + 21, textPaintMacros)
-                drawText(_values.Protein.toString()+" protein", leftOffset + actualWidth + 5, actualHeight * 0.5f + 21, textPaintMacros)
-                drawText(_values.Fat.toString()+" fat", leftOffset + actualWidth + 5, actualHeight * 0.8333f + 21, textPaintMacros)
+                drawText(_values.Carbs.toString()+"g carbs", leftOffset + actualWidth + 5, actualHeight * 0.1666f + 21, textPaintMacros)
+                drawText(_values.Protein.toString()+"g protein", leftOffset + actualWidth + 5, actualHeight * 0.5f + 21, textPaintMacros)
+                drawText(_values.Fat.toString()+"g fat", leftOffset + actualWidth + 5, actualHeight * 0.8333f + 21, textPaintMacros)
 
             }
         }

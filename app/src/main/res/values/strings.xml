@@ -52,4 +52,6 @@
     <string name="cat_snacks_name">snacks</string>
     <string name="standalone_snack_breadroll_salami_name">Breadroll (Salami)</string>
     <string name="ingredient_dairy_curd_lean_name">curd(lean)</string>
+    <string name="ingredient_nuts_hazelnuts_name">Hazelnuts</string>
+    <string name="ingredient_vegetable_avocado_name">avocado</string>
 </resources>
